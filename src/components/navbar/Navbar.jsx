@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <div className="app__enquiry__box_and_navbar">
-      <div className="app__enquiry_box">
+      <div className="app__enquiry_box app__container">
         <div className="app__enquiry_box__info">
           <div className="app__enquiry_box__info_call">
             <img src={images.mail_icon} alt="call" />
@@ -22,20 +22,22 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="app__navbar">
+      <nav className="app__navbar app__container">
         <div className="app__navbar-logo">
           <img src={images.logo} alt="logo" />
         </div>
         <ul className="app__navbar-links">
-          {["home", "about", "work", "skills", "contact"].map((item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          ))}
+          {["home", "about", "services", "products", "about-us", "careers"].map(
+            (item) => (
+              <li className="app__flex p-text" key={`link-${item}`}>
+                <div />
+                <a href={`#${item}`}>{item}</a>
+              </li>
+            )
+          )}
         </ul>
 
-        <div className="app__navbar-menu">
+        <div className="app__navbar-menu ">
           <HiMenuAlt4 onClick={() => setToggle(true)} />
 
           {toggle && (
@@ -45,7 +47,14 @@ const Navbar = () => {
             >
               <HiX onClick={() => setToggle(false)} />
               <ul>
-                {["home", "about", "work", "skills", "contact"].map((item) => (
+                {[
+                  "home",
+                  "about",
+                  "services",
+                  "products",
+                  "about-us",
+                  "careers",
+                ].map((item) => (
                   <li key={item}>
                     <a href={`#${item}`} onClick={() => setToggle(false)}>
                       {item}

@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 1rem 10rem;
+  // padding: 1rem 10rem;
   background: rgba(255, 255, 255, 0.25);
   // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur(4px);
@@ -15,7 +15,7 @@
   z-index: 2;
 
   @media screen and (max-width: 900px) {
-    padding: 3rem;
+    padding: 0.5rem 3rem;
 
   }
 }
@@ -141,7 +141,7 @@
     right: 0;
     z-index: 5;
 
-    padding: 3rem 1rem;
+    padding: 0.5rem 1rem;
 
     width: 80%;
     height: 100vh;

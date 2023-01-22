@@ -1,0 +1,62 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.hero_left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero1_highlight {
+  margin: 2rem 0;
+}
+.hero1_highlight > :nth-child(1) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 116.07%;
+}
+.hero1_highlight > :nth-child(2) {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 116.07%;
+  color: #282828;
+}
+.hero_dotted-img {
+  position: absolute;
+  bottom: -10px;
+  z-index: -10;
+}
+.hero_right {
+  flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+  .hero_left {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .hero_right img {
+    width: 15rem;
+    margin-bottom: 2rem;
+  }
+  .hero1_highlight > :nth-child(1) {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .hero1_highlight > :nth-child(2) {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
