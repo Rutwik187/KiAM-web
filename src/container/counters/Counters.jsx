@@ -1,6 +1,6 @@
 import React from "react";
 import "./counter.css";
-import NumberCounter from "number-counter";
+import CountUp from "react-countup";
 
 const Counters = () => {
   return (
@@ -8,19 +8,19 @@ const Counters = () => {
       <div className="sub_head-text">Some Numbers</div>
       <div>
         <span>
-          <NumberCounter end={100000} start={85000} delay={7} />
+          <CountUp end={100000} start={95000} duration={4} delay={0} />
         </span>
         <span>Sensors</span>
       </div>
       <div>
         <span>
-          <NumberCounter end={2000} start={1500} delay={7} />
+          <CountUp end={2000} start={1500} duration={4} delay={0} />
         </span>
         <span>Sites</span>
       </div>
       <div>
         <span>
-          <NumberCounter end={20} start={12} delay={7} />
+          <CountUp end={20} start={12} duration={4} delay={0} />
         </span>
         <span>Projects</span>
       </div>
