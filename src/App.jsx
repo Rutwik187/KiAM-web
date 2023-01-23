@@ -2,12 +2,14 @@ import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Counters from "./container/counters/Counters";
 import Hero from "./container/hero/Hero";
+import DummyHero from "./container/hero_dummy/DummyHero";
 
 function App() {
   return (
     <div className="app">
       <Navbar />
-      <Hero />
+      {/* <Hero /> */}
+      <DummyHero />
       <Counters />
     </div>
   );

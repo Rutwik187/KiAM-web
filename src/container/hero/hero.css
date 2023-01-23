@@ -35,6 +35,17 @@
 .hero_right {
   flex: 1;
 }
+.carousel-indicators {
+  bottom: -3rem !important;
+}
+.carousel-indicators button {
+  width: 3px !important;
+  height: 3px !important;
+  border-radius: 50% !important;
+  background: var(--secondary-color) !important;
+  padding: 3px !important;
+  border: 2px solid var(--secondary-color) !important;
+}
 
 @media screen and (max-width: 900px) {
   .hero {

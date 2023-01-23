@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { images } from "../../constants";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./hero.css";
 
 function DummyHero() {
   const [index, setIndex] = useState(0);
@@ -16,7 +15,7 @@ function DummyHero() {
       activeIndex={index}
       onSelect={handleSelect}
       interval={5000}
-      // fade={true}
+      controls={true}
     >
       <Carousel.Item>
         <div className="hero app__container">
