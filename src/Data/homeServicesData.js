@@ -21,7 +21,7 @@ export const homeServicesData = [
     {
         id: 'home_service_card-4',
         img: images.hero_services_remote_monitoring,
-        title: 'Centralized Remote Monitoring',
+        title: 'Remote Monitoring',
         desc: "We build ready made websites, mobile applications."
     },
 ]
