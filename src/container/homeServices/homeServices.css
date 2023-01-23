@@ -1,0 +1,138 @@
+.home_services {
+  /* position: relative; */
+  margin-top: 3rem;
+  /* box-shadow: var(--box-shadow); */
+}
+.home_services_light-red-bg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  /* box-shadow: var(--box-shadow); */
+}
+.home_services-left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.home_services-left hr {
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  opacity: unset;
+}
+
+.hero_services_dotted-img {
+  /* position: absolute; */
+}
+
+.home_services-right {
+  width: 100%;
+}
+
+.home_services-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  gap: 2rem;
+}
+
+.home_services-card {
+  width: 14rem;
+  height: 17rem;
+  position: relative;
+  animation: floating 4s ease-in-out infinite;
+
+  border-radius: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.home_services-card img {
+  width: 3rem;
+}
+.home_services-card h5 {
+  font-weight: 500;
+  font-size: 1.12rem;
+  line-height: 140%;
+}
+.home_service_card p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0%);
+  }
+  50% {
+    transform: translatey(-10%);
+  }
+  100% {
+    transform: translatey(0%);
+  }
+}
+.home_service_card-1 {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.home_service_card-2 {
+  grid-area: 6 / 1 / 11 / 2;
+}
+.home_service_card-3 {
+  grid-area: 2 / 2 / 7 / 3;
+}
+.home_service_card-4 {
+  grid-area: 7 / 2 / 12 / 3;
+}
+
+@media screen and (max-width: 900px) {
+  .home_services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+
+  .home_services-left {
+    width: 100%;
+  }
+  .home_services-left img {
+    display: none;
+  }
+  .home_services_light-red-bg {
+    display: none;
+  }
+  .home_services-card {
+    width: 12rem;
+    height: 13rem;
+    border-radius: 20px;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  .home_services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .home_services-card h5 {
+    font-size: 1rem;
+  }
+  .home_services-card p {
+    font-size: 0.8rem;
+  }
+}

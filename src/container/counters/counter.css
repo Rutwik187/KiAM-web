@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .hero-figures > div {
   display: flex;
@@ -26,17 +26,17 @@
     justify-content: center;
     align-items: center;
   }
-  .figures > div > span:nth-of-type(1) {
-    font-size: large;
-  }
-
-  .figures > div > span:nth-of-type(2) {
-    font-size: small;
-  }
   .hero-figures > div {
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
     font-weight: bold;
+  }
+  .hero-figures > div > span:nth-of-type(1) {
+    font-size: 2rem;
+  }
+
+  .hero-figures > div > span:nth-of-type(2) {
+    font-size: small;
   }
 }

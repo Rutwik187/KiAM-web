@@ -18,7 +18,7 @@
   flex-direction: row;
   padding:1rem 10rem;
   @media screen and (max-width: 1200px) {
-    padding: 0.5rem 3rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -99,7 +99,7 @@ color: #282828;
   }
 }
 .p-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: left;
   color: var(--black-color);
   line-height: 1.5;
