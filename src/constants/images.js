@@ -8,5 +8,6 @@ import hero_services_energy_saving from "../assets/services_energy_saving_icon.s
 import hero_services_amc_services from "../assets/services_amc_services_icon.svg"
 import hero_services_remote_monitoring from "../assets/services_remote_monitoring_icon.svg"
 import light_red_bg from "../assets/light-red-bg.png"
+import product_access_control from "../assets/product_access_control.png"
 
-export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg }
+export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control }

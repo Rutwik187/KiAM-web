@@ -30,7 +30,7 @@ const HomeServices = () => {
           <div className="ball home_services-circle1"></div>
           <div className="ball home_services-circle2"></div>
           {homeServicesData.map((item, index) => (
-            <div key={item.id} class={`${item.id} home_services-card`}>
+            <div key={item.id} className={`${item.id} home_services-card`}>
               <img src={item.img} alt={item.title} />
               <h5>{item.title}</h5>
               <p>{item.desc}</p>

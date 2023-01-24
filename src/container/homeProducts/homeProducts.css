@@ -1,0 +1,79 @@
+.home_products {
+  display: flex;
+}
+.home_products_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.home_product-selected-product_info {
+  width: 70%;
+}
+.home_product_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home_product_img img {
+  width: 15rem;
+}
+
+.home_products-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.home_products-tablist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.react-tabs__tab {
+  margin: 1rem 0rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.react-tabs__tab--selected {
+  color: var(--secondary-color);
+  outline: none;
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+@keyframes swipeIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes swipeOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Apply the animation to the tab panels when the classname changes */
+.swipe-in {
+  animation: swipeIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.swipe-out {
+  animation: swipeOut 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media screen and (max-width: 900px) {
+  .home_products {
+    flex-direction: column;
+  }
+}

@@ -1,90 +1,62 @@
-import React, { useState } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import { images } from "../../constants";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+// import "react-tabs/style/react-tabs.css";
 
-function DummyHero() {
-  const [index, setIndex] = useState(0);
+import "./dummyHero.css";
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
+const DummyHero = () => {
   return (
-    <Carousel
-      activeIndex={index}
-      onSelect={handleSelect}
-      interval={5000}
-      controls={true}
-    >
-      <Carousel.Item>
-        <div className="hero app__container">
-          <div className="hero_left">
-            <div className="head-text">Iot Based</div>
-            <div className="sub_head-text">Energy Monitoring System</div>
-            <div className="hero1_highlight">
-              <div>Save Power Cost by</div>
-              <div>15% to 20%</div>
-            </div>
-
-            <button className="button">Know More</button>
-            <img
-              className="hero_dotted-img"
-              src={images.dotted_bg}
-              alt="dotted background"
-            />
-          </div>
-          <div className="hero_right app__flex">
-            <img src={images.hero1} alt="" />
-          </div>
+    <div>
+      <Tabs>
+        <div className="tablist">
+          <TabList>
+            <Tab>
+              <p>Title 1</p>
+            </Tab>
+            <Tab>
+              <p>Title 2</p>
+            </Tab>
+            <Tab>
+              <p>Title 3</p>
+            </Tab>
+            <Tab>
+              <p>Title 4</p>
+            </Tab>
+            <Tab>
+              <p>Title 5</p>
+            </Tab>
+          </TabList>
         </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="hero app__container">
-          <div className="hero_left">
-            <div className="head-text">Iot Based</div>
-            <div className="sub_head-text">Energy Monitoring System</div>
-            <div className="hero1_highlight">
-              <div>Save Power Cost by</div>
-              <div>15% to 20%</div>
+        <div className="tab-pannel">
+          <TabPanel>
+            <div className="panel-content">
+              <h2>Any content 1</h2>
             </div>
-
-            <button className="button">Know More</button>
-            <img
-              className="hero_dotted-img"
-              src={images.dotted_bg}
-              alt="dotted background"
-            />
-          </div>
-          <div className="hero_right app__flex">
-            <img src={images.hero1} alt="" />
-          </div>
-        </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="hero app__container">
-          <div className="hero_left">
-            <div className="head-text">Iot Based</div>
-            <div className="sub_head-text">Energy Monitoring System</div>
-            <div className="hero1_highlight">
-              <div>Save Power Cost by</div>
-              <div>15% to 20%</div>
+          </TabPanel>
+          <TabPanel>
+            <div className="panel-content">
+              <h2>Any content 2</h2>
             </div>
-
-            <button className="button">Know More</button>
-            <img
-              className="hero_dotted-img"
-              src={images.dotted_bg}
-              alt="dotted background"
-            />
-          </div>
-          <div className="hero_right app__flex">
-            <img src={images.hero1} alt="" />
-          </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="panel-content">
+              <h2>Any content 3</h2>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="panel-content">
+              <h2>Any content 4</h2>
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="panel-content">
+              <h2>Any content 5</h2>
+            </div>
+          </TabPanel>
         </div>
-      </Carousel.Item>
-    </Carousel>
+      </Tabs>
+    </div>
   );
-}
-
+};
 export default DummyHero;
