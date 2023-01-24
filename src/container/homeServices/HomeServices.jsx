@@ -6,11 +6,11 @@ import { homeServicesData } from "../../Data/homeServicesData";
 const HomeServices = () => {
   return (
     <div className="home_services app__container">
-      <img
+      {/* <img
         className="home_services_light-red-bg"
         src={images.light_red_bg}
         alt="light red bg"
-      />
+      /> */}
       <div className="home_services-left">
         <div className="head-text">Services</div>
         <hr />
@@ -18,7 +18,7 @@ const HomeServices = () => {
           We build ready made websites, mobile applications, and elaborate
           online business services.
         </p>
-
+        <button className="button">Know More</button>
         <img
           className="hero_services_dotted-img"
           src={images.dotted_bg}
@@ -27,6 +27,8 @@ const HomeServices = () => {
       </div>
       <div className="home_services-right app__flex">
         <div className="home_services-cards">
+          <div className="ball home_services-circle1"></div>
+          <div className="ball home_services-circle2"></div>
           {homeServicesData.map((item, index) => (
             <div key={item.id} class={`${item.id} home_services-card`}>
               <img src={item.img} alt={item.title} />
@@ -34,7 +36,7 @@ const HomeServices = () => {
               <p>{item.desc}</p>
             </div>
           ))}
-          {/* <button className="button">Know More</button> */}
+          <button className="button">Know More</button>
         </div>
       </div>
     </div>
