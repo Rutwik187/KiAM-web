@@ -10,11 +10,19 @@
 .app__primarybg {
   background-color: var(--primary-color);
 }
-.mtb-2{
+.mtb-1{
   margin: 1rem 0rem;
 }
 .mtb-2{
   margin: 2rem 0rem;
+}
+@media screen and (max-width: 600px) {
+  .mtb-1{
+    margin: 0.5rem 0rem;
+  }
+  .mtb-2{
+    margin: 1rem 0rem;
+  }
 }
 
 .app__container {
@@ -140,7 +148,7 @@ color: #282828;
 }
 
 .bold-text {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   font-weight: 800;
   color: var(--black-color);
   text-align: left;
@@ -150,7 +158,7 @@ color: #282828;
   }
 
   @media screen and (max-width: 450px) {
-    font-size: 0.9rem;
+    // font-size: 1.4rem;
   }
 }
 
