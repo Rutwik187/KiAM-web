@@ -15,7 +15,7 @@ const Timeline = () => {
       <div className="timeline">
         {projectLifecycleData.map((data) => (
           <div key={data.id} className={data.className}>
-            <div className="date">{data.id}</div>
+            <div className="timeline_count">{data.id}</div>
 
             <img className="timeline_icon" src={data.icon} alt="" />
 
