@@ -2,6 +2,11 @@
   // background-color: var(--primary-color);
   font-family: var(--font-base);
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 .app__whitebg {
   background-color: var(--white-color);
@@ -28,8 +33,7 @@
 .app__container {
   width: 100%;
   // min-height: 100vh;
-  display: flex;
-  flex-direction: row;
+  
   padding:1rem 10rem;
   @media screen and (max-width: 1200px) {
     padding: 1rem 1.5rem;

@@ -48,11 +48,13 @@
 }
 
 @media screen and (max-width: 900px) {
+  .carousel {
+    z-index: -1 !important;
+  }
   .hero {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    z-index: -1;
   }
   .hero_left {
     justify-content: center !important;

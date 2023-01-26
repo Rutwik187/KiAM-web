@@ -6,20 +6,23 @@ import { homeProductsData } from "../../Data/homeProductsData";
 
 const HomeProducts = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(10);
 
   useEffect(() => {
     // Set a timeout to automatically switch to the next tab
     const timeoutId = setTimeout(() => {
+      setTimeLeft(timeLeft - 1);
       if (currentTabIndex === 3) {
         setCurrentTabIndex(0);
       } else {
         setCurrentTabIndex(currentTabIndex + 1);
       }
-    }, 10000);
+    }, 8000);
 
     // Clean up the timeout when the component unmounts
     return () => clearTimeout(timeoutId);
-  }, [currentTabIndex]);
+  }, [timeLeft]);
+
   return (
     <div>
       <Tabs

@@ -43,7 +43,11 @@
   font-size: 1.5rem;
   border-bottom: 2px solid var(--secondary-color);
 }
-
+.home_services-left hr {
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  opacity: unset;
+}
 @keyframes swipeIn {
   from {
     transform: translateX(-100%);

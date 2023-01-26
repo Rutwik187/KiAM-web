@@ -9,5 +9,10 @@ import hero_services_amc_services from "../assets/services_amc_services_icon.svg
 import hero_services_remote_monitoring from "../assets/services_remote_monitoring_icon.svg"
 import light_red_bg from "../assets/light-red-bg.png"
 import product_access_control from "../assets/product_access_control.png"
+import video_img from "../assets/video-img.png"
+import idea from "../assets/idea.svg"
+import emphasize from "../assets/empathize.svg"
+import build from "../assets/build.svg"
+import deploy from "../assets/deploy.svg"
 
-export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control }
+export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy }
