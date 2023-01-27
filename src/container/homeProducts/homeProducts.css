@@ -30,14 +30,19 @@
   flex-direction: column;
   margin-top: 1rem;
 }
-.react-tabs__tab {
+.home_products-tablist .react-tabs__tab {
   margin: 1rem 0rem;
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
 }
-
-.react-tabs__tab--selected {
+.home_products-tablist .react-tabs__tab:hover {
+  color: var(--secondary-color);
+  outline: none;
+  /* font-size: 1.5rem; */
+  /* border-bottom: 2px solid var(--secondary-color); */
+}
+.home_products-tablist .react-tabs__tab--selected {
   color: var(--secondary-color);
   outline: none;
   font-size: 1.5rem;

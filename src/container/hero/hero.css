@@ -46,10 +46,15 @@
   padding: 3px !important;
   border: 2px solid var(--secondary-color) !important;
 }
+@media screen and (min-width: 900px) {
+  .hero {
+    height: 60vh;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .carousel {
-    z-index: -1 !important;
+    /* z-index: -1 !important; */
   }
   .hero {
     flex-direction: column-reverse;

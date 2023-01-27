@@ -14,5 +14,14 @@ import idea from "../assets/idea.svg"
 import emphasize from "../assets/empathize.svg"
 import build from "../assets/build.svg"
 import deploy from "../assets/deploy.svg"
+import brand1 from "../assets/brand1.png"
+import brand2 from "../assets/brand2.png"
+import brand3 from "../assets/brand3.png"
+import brand4 from "../assets/brand4.png"
+import brand5 from "../assets/brand5.png"
+import brand6 from "../assets/brand6.png"
+import brand7 from "../assets/brand7.png"
+import dotted_bg_short from "../assets/dotted_bg_short.png"
 
-export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy }
+
+export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short }

@@ -33,7 +33,7 @@
 .app__container {
   width: 100%;
   // min-height: 100vh;
-  
+  // overflow-x: hidden;
   padding:1rem 10rem;
   @media screen and (max-width: 1200px) {
     padding: 1rem 1.5rem;
@@ -255,3 +255,4 @@ color: #282828;
     padding: 2rem;
   }
 }
+

@@ -35,11 +35,15 @@
       display: flex;
       flex: 1;
       width: 150px;
+
       img{
         width: 15px;
         margin-right: 0.5rem;
       }
     }
+  }
+  .app__enquiry_box__info_mail{
+    margin-right: 2rem;
   }
   @media screen and (max-width: 900px) {
     
@@ -139,7 +143,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    z-index: 5;
+    z-index: 100;
 
     padding: 0.5rem 1rem;
 

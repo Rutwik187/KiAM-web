@@ -1,0 +1,100 @@
+.home_brands {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home_brand-head {
+  width: 70%;
+  text-align: center;
+}
+.home_brand-content {
+  margin-top: 4rem;
+  display: flex;
+}
+.home_brands-review-logo {
+  padding: 30px 90px 30px 30px;
+  width: 12rem;
+  height: 8rem;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  background: rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%); */
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+}
+.home_brand-review-logo_dotted-bg {
+  position: absolute;
+
+  right: 100%;
+  width: 70%;
+}
+.home_brands-reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30rem;
+  margin-right: 8rem;
+}
+.home_brands-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.react-tabs__tab-panel img {
+  width: 3rem;
+}
+
+.home_brands-logos .react-tabs__tab {
+  cursor: pointer;
+  list-style: none;
+  border-radius: 0.5rem;
+  height: 5rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+.home_brands-logos .react-tabs__tab--selected {
+  outline: none;
+  scale: 1.1;
+  box-shadow: var(--secondary-box-shadow);
+}
+.home_brands-logos .react-tabs__tab:hover {
+  transform: scale(1.1);
+  box-shadow: var(--secondary-box-shadow);
+}
+
+.home_brands-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .home_brands {
+    align-items: start;
+    text-align: start;
+  }
+  .home_brand-head {
+    text-align: start;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .home_brand-content {
+    display: none;
+  }
+  .home_brands-mobile {
+    display: block;
+  }
+  .home_brands-reviews {
+    width: 100%;
+  }
+}
