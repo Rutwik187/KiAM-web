@@ -87,6 +87,7 @@
     text-align: start;
     font-size: 1.8rem;
     margin-bottom: 2rem;
+    width: 100%;
   }
   .home_brand-content {
     display: none;

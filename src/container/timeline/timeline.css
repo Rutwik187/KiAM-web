@@ -216,6 +216,7 @@
     letter-spacing: 1px;
     z-index: 1;
     left: 80px;
+    max-width: 3rem;
     top: 0;
   }
 }

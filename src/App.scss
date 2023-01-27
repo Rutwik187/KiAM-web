@@ -7,6 +7,9 @@
 *::after {
   box-sizing: border-box;
 }
+// * {
+//   outline: solid 1px red;
+// }
 
 .app__whitebg {
   background-color: var(--white-color);
@@ -31,7 +34,7 @@
 }
 
 .app__container {
-  width: 100%;
+  // width: 100%;
   // min-height: 100vh;
   // overflow-x: hidden;
   padding:1rem 10rem;
