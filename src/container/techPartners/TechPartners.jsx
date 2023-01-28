@@ -24,7 +24,7 @@ const TechPartners = () => {
   };
 
   return (
-    <div className="TechPartners app__tech_partner-logo">
+    <div className="TechPartners app__container">
       <div className="tech_partners-head">
         <div className=" head-text ">Our Technology Partners</div>
       </div>
