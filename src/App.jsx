@@ -7,6 +7,7 @@ import HomeBrands from "./container/homeBrands/HomeBrands";
 import HomeProducts from "./container/homeProducts/HomeProducts";
 import HomeServices from "./container/homeServices/HomeServices";
 import HomeVideo from "./container/homeVideo/HomeVideo";
+import TechPartners from "./container/techPartners/TechPartners";
 import Timeline from "./container/timeline/Timeline";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <HomeVideo />
       <Timeline />
       <HomeBrands />
+      <TechPartners />
       {/* <DummyHero /> */}
     </div>
   );

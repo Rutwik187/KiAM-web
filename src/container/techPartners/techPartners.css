@@ -1,0 +1,20 @@
+.TechPartners {
+  margin-top: 2rem;
+}
+.tech_partners-head {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.tech_partner-logo {
+  max-width: 96%;
+}
+
+.tech_partner-logo img {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+}
