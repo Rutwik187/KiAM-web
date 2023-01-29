@@ -13,6 +13,9 @@
   margin-bottom: 2rem;
   text-align: center;
 }
+.contact_us-head > div:first-child {
+  margin-bottom: 0.5rem;
+}
 .contact_us-head div {
   text-align: center;
 }
@@ -36,5 +39,8 @@
     padding: 0.8rem 1rem;
     outline: none;
     border-radius: 10px;
+  }
+  .contact_us-head > div:first-child {
+    margin-bottom: 1rem;
   }
 }
