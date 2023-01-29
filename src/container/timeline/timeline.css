@@ -219,4 +219,7 @@
     max-width: 3rem;
     top: 0;
   }
+  .timeline_container::after {
+    top: 0%;
+  }
 }

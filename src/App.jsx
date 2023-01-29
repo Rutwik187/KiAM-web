@@ -2,6 +2,7 @@ import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import ContactUs from "./container/contactUs/ContactUs";
 import Counters from "./container/counters/Counters";
+import Footer from "./container/footer/Footer";
 import Hero from "./container/hero/Hero";
 import DummyHero from "./container/hero_dummy/DummyHero";
 import HomeBrands from "./container/homeBrands/HomeBrands";
@@ -24,6 +25,7 @@ function App() {
       <HomeBrands />
       <TechPartners />
       <ContactUs />
+      <Footer />
       {/* <DummyHero /> */}
     </div>
   );
