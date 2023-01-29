@@ -1,5 +1,6 @@
 import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
+import ContactUs from "./container/contactUs/ContactUs";
 import Counters from "./container/counters/Counters";
 import Hero from "./container/hero/Hero";
 import DummyHero from "./container/hero_dummy/DummyHero";
@@ -22,6 +23,7 @@ function App() {
       <Timeline />
       <HomeBrands />
       <TechPartners />
+      <ContactUs />
       {/* <DummyHero /> */}
     </div>
   );

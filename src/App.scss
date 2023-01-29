@@ -112,9 +112,10 @@
   font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
-font-size: 2.5rem;
+letter-spacing: 1px;
+font-size: 2rem;
 line-height: 3rem;
-color: #282828;
+
   text-transform: uppercase;
   
 
@@ -123,6 +124,7 @@ color: #282828;
   }
 
   @media screen and (max-width: 450px) {
+    
     font-size: 1.5rem;
   }
 }
@@ -146,7 +148,7 @@ color: #282828;
 .p-text {
   font-size: 1rem;
   text-align: left;
-  color: var(--black-color);
+
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {

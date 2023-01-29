@@ -26,6 +26,7 @@ import partner1 from "../assets/partner1.svg"
 import partner2 from "../assets/partner2.svg"
 import partner3 from "../assets/partner3.svg"
 import partner4 from "../assets/partner4.svg"
+import contact_us_bg from "../assets/contact-us-bg.png"
 
 
-export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short, partner1, partner2, partner3, partner4 }
+export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short, partner1, partner2, partner3, partner4, contact_us_bg }

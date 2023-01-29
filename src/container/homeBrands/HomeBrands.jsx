@@ -47,11 +47,7 @@ const HomeBrands = () => {
         <TabList className="home_brands-logos">
           {brandsData.map((item) => (
             <Tab key={item.id}>
-              <img
-                className="border-animation draw meet"
-                src={item.img}
-                alt="brand logo"
-              />
+              <img src={item.img} alt="brand logo" />
             </Tab>
           ))}
         </TabList>
@@ -65,7 +61,7 @@ const HomeBrands = () => {
         // fade={true}
       >
         {brandsData.map((item) => (
-          <Carousel.Item>
+          <Carousel.Item key={item.id}>
             <div className="home_brands-reviews">
               <div className="home_brands-review-logo  app__flex">
                 <img
