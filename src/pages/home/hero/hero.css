@@ -53,8 +53,11 @@
 }
 
 @media screen and (max-width: 900px) {
-  .carousel {
-    /* z-index: -1 !important; */
+  .carousel-inner {
+    z-index: -1;
+  }
+  .carousel-indicators {
+    z-index: -1;
   }
   .hero {
     flex-direction: column-reverse;

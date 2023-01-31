@@ -1,4 +1,4 @@
-import { projectLifecycleData } from "../../Data/projectLifecycleData";
+import { projectLifecycleData } from "../../../Data/projectLifecycleData";
 import "./timeline.css";
 
 const Timeline = () => {

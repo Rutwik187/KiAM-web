@@ -1,7 +1,7 @@
 import React from "react";
 import "./homeServices.css";
-import { images } from "../../constants";
-import { homeServicesData } from "../../Data/homeServicesData";
+import { images } from "../../../constants";
+import { servicesData } from "../../../Data/servicesData";
 
 const HomeServices = () => {
   return (
@@ -29,7 +29,7 @@ const HomeServices = () => {
         <div className="home_services-cards">
           <div className="ball home_services-circle1"></div>
           <div className="ball home_services-circle2"></div>
-          {homeServicesData.map((item, index) => (
+          {servicesData.map((item, index) => (
             <div key={item.id} className={`${item.id} home_services-card`}>
               <img src={item.img} alt={item.title} />
               <h5>{item.title}</h5>

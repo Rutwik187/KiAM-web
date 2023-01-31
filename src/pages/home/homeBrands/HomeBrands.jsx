@@ -1,8 +1,8 @@
 import "./homeBrands.css";
 import React, { useState } from "react";
-import { images } from "../../constants";
+import { images } from "../../../constants";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { brandsData } from "../../Data/brandsData";
+import { brandsData } from "../../../Data/brandsData";
 
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";

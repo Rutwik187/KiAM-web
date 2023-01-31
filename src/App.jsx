@@ -1,32 +1,29 @@
 import "./App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Services from "./pages/services/Services";
+import Products from "./pages/products/Products";
+import AboutUs from "./pages/about-us/AboutUs";
+import ErrorPage from "./pages/error-page/ErrorPage";
 import Navbar from "./components/navbar/Navbar";
-import ContactUs from "./container/contactUs/ContactUs";
-import Counters from "./container/counters/Counters";
-import Footer from "./container/footer/Footer";
-import Hero from "./container/hero/Hero";
-import DummyHero from "./container/hero_dummy/DummyHero";
-import HomeBrands from "./container/homeBrands/HomeBrands";
-import HomeProducts from "./container/homeProducts/HomeProducts";
-import HomeServices from "./container/homeServices/HomeServices";
-import HomeVideo from "./container/homeVideo/HomeVideo";
-import TechPartners from "./container/techPartners/TechPartners";
-import Timeline from "./container/timeline/Timeline";
+import Footer from "./components/footer/Footer";
+import ContactUs from "./components/contactUs/ContactUs";
 
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Hero />
-      <Counters />
-      <HomeServices />
-      <HomeProducts />
-      <HomeVideo />
-      <Timeline />
-      <HomeBrands />
-      <TechPartners />
-      <ContactUs />
-      <Footer />
-      {/* <DummyHero /> */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <ContactUs />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

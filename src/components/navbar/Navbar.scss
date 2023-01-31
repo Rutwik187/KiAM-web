@@ -1,4 +1,6 @@
 .app__navbar {
+  position: relative;
+  z-index: 10;
   width: 100%;
 
   display: flex;
@@ -12,7 +14,7 @@
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   // position: fixed;
-  z-index: 2;
+
 
   @media screen and (max-width: 900px) {
     padding: 0.5rem 2rem;
@@ -28,14 +30,13 @@
   padding: 0.5rem 10rem;
   align-items: center;
   justify-content: flex-end;
+  
   div{
     display: flex;
-
     div{
       display: flex;
       flex: 1;
       width: 150px;
-
       img{
         width: 15px;
         margin-right: 0.5rem;
@@ -43,12 +44,10 @@
     }
   }
   .app__enquiry_box__info_mail{
-    margin-right: 2rem;
+    margin-left: 2rem;
   }
   @media screen and (max-width: 900px) {
-    
       display: none;
-   
   }
 }
 .app__navbar-logo {
@@ -131,7 +130,6 @@
   align-items: center;
   background-color: var(--secondary-color);
 
-
   svg {
     width: 70%;
     height: 70%;
@@ -143,7 +141,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    z-index: 100;
+  
 
     padding: 0.5rem 1rem;
 

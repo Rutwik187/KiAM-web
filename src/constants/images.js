@@ -34,5 +34,14 @@ import white_logo from "../assets/logo-white-bg.png"
 import instagram from "../assets/instagram.svg"
 import facebook from "../assets/facebook.svg"
 import linkedIn from "../assets/linkedin.svg"
+import energy_saving_services1 from "../assets/Energy-saving-1.png"
+import energy_saving_services2 from "../assets/Energy-saving-2.png"
+import energy_saving_services3 from "../assets/Energy-saving-3.png"
+import energy_saving_services4 from "../assets/Energy-saving-4.png"
+import energy_saving_services5 from "../assets/Energy-saving-5.png"
+import energy_saving_services6 from "../assets/Energy-saving-6.png"
+import energy_saving_services7 from "../assets/Energy-saving-7.png"
+import energy_saving_services8 from "../assets/Energy-saving-8.png"
+import small_corner_rectangle from "../assets/small-corner-rectangle.png"
 
-export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short, partner1, partner2, partner3, partner4, contact_us_bg, phone_footer, mail_footer, location_footer, white_logo, instagram, facebook, linkedIn }
+export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short, partner1, partner2, partner3, partner4, contact_us_bg, phone_footer, mail_footer, location_footer, white_logo, instagram, facebook, linkedIn, energy_saving_services1, energy_saving_services2, energy_saving_services3, energy_saving_services4, energy_saving_services5, energy_saving_services6, energy_saving_services7, energy_saving_services8, small_corner_rectangle }

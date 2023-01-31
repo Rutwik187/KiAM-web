@@ -1,6 +1,6 @@
 import React from "react";
 import "./homeVideo.css";
-import { images } from "../../constants";
+import { images } from "../../../constants";
 const HomeVideo = () => {
   return (
     <div className="home_video app__container">

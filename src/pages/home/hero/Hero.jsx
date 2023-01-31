@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { images } from "../../constants";
+import { images } from "../../../constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./hero.css";
 
