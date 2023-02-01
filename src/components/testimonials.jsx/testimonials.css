@@ -56,6 +56,7 @@ hr {
   margin-left: 2rem;
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .testimonial-image img {
@@ -92,6 +93,7 @@ hr {
 
 @media screen and (max-width: 769px) {
   .testimonial-container {
+    margin-top: 2.5rem;
     margin-right: 0;
     flex-direction: column-reverse;
     justify-content: center;

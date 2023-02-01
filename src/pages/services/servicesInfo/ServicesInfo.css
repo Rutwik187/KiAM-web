@@ -167,6 +167,9 @@
   .servicesImages-gallery8 {
     grid-area: 4 / 3 / 5 / 6;
   }
+  .servicesImages-gallery-img {
+    height: 6rem;
+  }
 
   .servicesImages-gallery-img::before {
     opacity: 1;

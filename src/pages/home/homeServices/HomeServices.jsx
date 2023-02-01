@@ -27,8 +27,8 @@ const HomeServices = () => {
       </div>
       <div className="home_services-right app__flex">
         <div className="home_services-cards">
-          <div className="ball home_services-circle1"></div>
-          <div className="ball home_services-circle2"></div>
+          {/* <div className="ball home_services-circle1"></div> */}
+          {/* <div className="ball home_services-circle2"></div> */}
           {servicesData.map((item, index) => (
             <div key={item.id} className={`${item.id} home_services-card`}>
               <img src={item.img} alt={item.title} />
