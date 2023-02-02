@@ -55,7 +55,7 @@ const Testimonials = () => {
   });
 
   return (
-    <div className="testimonial app__container">
+    <div className="testimonial ">
       <div className="head-text">What Our Costumers Are Saying</div>
       <hr />
       <section className="testimonial-container">

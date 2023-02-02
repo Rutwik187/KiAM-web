@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 .servicesImages-text {
   flex: 1;
@@ -117,7 +117,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .servicesVideo-text {
@@ -132,6 +132,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .corner-rectangle {
+    display: none;
+  }
   .servicesInfo-container {
     padding-right: 2rem;
   }

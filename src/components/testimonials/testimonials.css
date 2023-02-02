@@ -1,4 +1,7 @@
-hr {
+.testimonial {
+  margin-top: 5rem;
+}
+.testimonial hr {
   background: var(--secondary-color);
   border: 1px solid var(--secondary-color);
   opacity: unset;
@@ -9,7 +12,7 @@ hr {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 4rem;
+  margin-top: 2rem;
 }
 
 .testimonial-section {
@@ -92,6 +95,9 @@ hr {
 }
 
 @media screen and (max-width: 769px) {
+  .testimonial {
+    margin-top: 3rem;
+  }
   .testimonial-container {
     margin-top: 2.5rem;
     margin-right: 0;

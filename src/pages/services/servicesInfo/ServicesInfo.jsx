@@ -5,18 +5,20 @@ import { servicesData } from "../../../Data/servicesData";
 import { servicesInfo } from "../../../Data/servicesData";
 import { HashLink } from "react-router-hash-link";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import Testimonials from "../../../components/testimonials/Testimonials";
 
 const ServicesInfo = () => {
-  const { tabId } = useParams();
+  let { tabId } = useParams();
 
-  // const location = useLocation();
-  // const { tab_id } = location.state;
+  console.log(tabId);
+  if (typeof tabId === "undefined") {
+    tabId = 0;
+  }
 
   const [tabIndex, setTabIndex] = useState(0);
-  // let { tab_id } = useParams();
+
   useEffect(() => {
     setTabIndex(Number(tabId));
   }, [tabId]);
@@ -126,6 +128,7 @@ const ServicesInfo = () => {
           </div>
         </TabPanel>
       ))}
+      <Testimonials />
     </Tabs>
   );
 };

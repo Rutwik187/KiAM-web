@@ -144,6 +144,10 @@
 
   .home_services-left {
     width: 100%;
+    align-items: center;
+  }
+  .home_services-left p {
+    text-align: center;
   }
   .home_services-left img {
     display: none;
