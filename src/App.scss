@@ -10,6 +10,11 @@
 // * {
 //   outline: solid 1px red;
 // }
+hr{
+  background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    opacity: unset;
+}
 
 .app__whitebg {
   background-color: var(--white-color);

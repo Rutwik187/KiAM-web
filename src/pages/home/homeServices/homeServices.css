@@ -36,6 +36,9 @@
 .home_services-right {
   width: 100%;
 }
+.home_services-right li {
+  list-style: none;
+}
 .home_services-right button {
   display: none;
 }
@@ -45,6 +48,17 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(11, 1fr);
   gap: 2rem;
+}
+
+.home_services-cards a {
+  width: 100%;
+  height: 100%;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .home_services-circle1 {
@@ -64,10 +78,6 @@
 
   border-radius: 40px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
   padding: 1rem;
   text-align: center;
   cursor: pointer;
@@ -79,6 +89,7 @@
   -webkit-backdrop-filter: blur(6px);
   /* border-radius: 10px; */
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.3s;
 }
 .home_services-card:hover {
   box-shadow: var(--secondary-box-shadow);

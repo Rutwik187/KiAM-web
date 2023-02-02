@@ -2,6 +2,8 @@ import React from "react";
 import "./homeServices.css";
 import { images } from "../../../constants";
 import { servicesData } from "../../../Data/servicesData";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const HomeServices = () => {
   return (
@@ -31,9 +33,11 @@ const HomeServices = () => {
           {/* <div className="ball home_services-circle2"></div> */}
           {servicesData.map((item, index) => (
             <div key={item.id} className={`${item.id} home_services-card`}>
-              <img src={item.img} alt={item.title} />
-              <h5>{item.title}</h5>
-              <p>{item.desc}</p>
+              <Link state={{ tab_id: index }} to={`/services/${index}`}>
+                <img src={item.img} alt={item.title} />
+                <h5>{item.title}</h5>
+                <p>{item.desc}</p>
+              </Link>
             </div>
           ))}
           <button className="button">Know More</button>

@@ -1,13 +1,32 @@
 import "./ServicesInfo.css";
+import { useState } from "react";
 import { images } from "../../../constants";
 import { servicesData } from "../../../Data/servicesData";
 import { servicesInfo } from "../../../Data/servicesData";
-
+import { HashLink } from "react-router-hash-link";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
+
 const ServicesInfo = () => {
+  const { tabId } = useParams();
+
+  // const location = useLocation();
+  // const { tab_id } = location.state;
+
+  const [tabIndex, setTabIndex] = useState(0);
+  // let { tab_id } = useParams();
+  useEffect(() => {
+    setTabIndex(Number(tabId));
+  }, [tabId]);
+
   return (
-    <Tabs className="app__container servicesInfo-container">
+    <Tabs
+      selectedIndex={tabIndex}
+      onSelect={(index) => setTabIndex(index)}
+      className="app__container servicesInfo-container"
+    >
       <div className="home_services ">
         {/* <img
         className="home_services_light-red-bg"
@@ -34,9 +53,11 @@ const ServicesInfo = () => {
             {/* <div className="ball home_services-circle2"></div> */}
             {servicesData.map((item, index) => (
               <Tab key={item.id} className={`${item.id} home_services-card`}>
-                <img src={item.img} alt={item.title} />
-                <h5>{item.title}</h5>
-                <p>{item.desc}</p>
+                <HashLink smooth to={`/services#${item.id}`}>
+                  <img src={item.img} alt={item.title} />
+                  <h5>{item.title}</h5>
+                  <p>{item.desc}</p>
+                </HashLink>
               </Tab>
             ))}
             {/* <button className="button">Know More</button> */}
@@ -44,8 +65,8 @@ const ServicesInfo = () => {
         </div>
       </div>
       {servicesInfo.map((item) => (
-        <TabPanel key={item.id}>
-          <div className="servicesTextInfo">
+        <TabPanel className="servicesInfoPanel" key={item.id} id={item.id}>
+          <div className="servicesTextInfo" id={item.id}>
             <div className="head-text">{item.InfoTitle}</div>
             <hr />
             <div className="p-text">{item.InfoDesc1}</div>

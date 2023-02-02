@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./homeProducts.css";
-import { homeProductsData } from "../../../Data/homeProductsData";
+import { homeProductsData } from "../../../Data/ProductsData";
 
 const HomeProducts = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);

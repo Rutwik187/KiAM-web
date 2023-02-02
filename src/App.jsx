@@ -17,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:tabId" element={<Services />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="*" element={<ErrorPage />} />
