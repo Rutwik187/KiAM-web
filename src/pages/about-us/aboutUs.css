@@ -1,0 +1,7 @@
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+.map-pop-up hr {
+  margin: 0.5rem 0;
+}

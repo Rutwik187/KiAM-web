@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./products.css";
-
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { ProductsInfo } from "../../Data/ProductsData";
 import { images } from "../../constants";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
@@ -9,8 +10,17 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import Testimonials from "../../components/testimonials/Testimonials";
 const Products = () => {
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+  const [tabIndex, setTabIndex] = useState(0);
   return (
-    <Tabs className="products app__container">
+    <Tabs
+      selectedIndex={tabIndex}
+      onSelect={(index) => setTabIndex(index)}
+      className="products app__container"
+    >
       <div className="products-hero ">
         <div className="products-left">
           <div className="head-text">Products</div>
@@ -37,6 +47,60 @@ const Products = () => {
                 </div>
               </Tab>
             ))}
+          </TabList>
+        </div>
+      </div>
+
+      <div className="products-hero-mobile ">
+        <div className="products-left">
+          <div className="head-text">Products</div>
+          <hr className="hr" />
+          <p className="p-text">
+            We build ready made websites, mobile applications, and elaborate
+            online business services.
+          </p>
+          {/* <button className="button">Know More</button> */}
+          <img
+            className="hero_services_dotted-img"
+            src={images.dotted_bg}
+            alt="dotted background"
+          />
+        </div>
+        <div className="products-right app__flex">
+          <TabList>
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              interval={5000}
+              // fade={true}
+            >
+              <Carousel.Item>
+                <div className="products-cards">
+                  {ProductsInfo.slice(0, 6).map((item, index) => (
+                    <Tab key={item.index} className="products-card">
+                      <img src={item.icon} alt="product" />
+                      <div className="products-card-textInfo">
+                        <h5>{item.name}</h5>
+                        <p>{item.short_desc}</p>
+                      </div>
+                    </Tab>
+                  ))}
+                </div>
+              </Carousel.Item>
+              <Carousel.Item>
+                <div className="products-cards">
+                  {ProductsInfo.slice(6, 12).map((item, index) => (
+                    <Tab key={item.index} className="products-card">
+                      <img src={item.icon} alt="product" />
+                      <div className="products-card-textInfo">
+                        <h5>{item.name}</h5>
+                        <p>{item.short_desc}</p>
+                      </div>
+                    </Tab>
+                  ))}
+                </div>
+              </Carousel.Item>
+            </Carousel>
           </TabList>
         </div>
       </div>

@@ -316,9 +316,9 @@ export const ProductsInfo = [
     {
         icon: images.product1Icon,
         name: "Smart Integra",
-        short_desc: "IoT Based Integrated Panel",
+        short_desc: "IoT Based Integrated Panel 12",
         img: images.product1,
-        title: "Smart Integra ( Smart I)",
+        title: "Smart Integra ( Smart XII)",
         title_desc: "SmartINTEGRA is a all-in-one integrated product that monitors Safety, Security & Efficiency systems such as:",
         desc_li: ["Fire",
             "Intrusion",
