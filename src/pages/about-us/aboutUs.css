@@ -3,9 +3,13 @@
   height: 100vh;
   z-index: 0;
 }
-.maps_popup {
-  padding: 1rem;
+.leaflet-popup {
+  max-width: 80vw;
 }
+.maps_popup {
+  max-width: 80vw;
+}
+
 .maps_popup .shop-img {
   width: 100%;
   border-radius: 5px;
@@ -26,4 +30,16 @@
 .maps_popup-services img {
   width: 5rem;
   margin: 0.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .maps_popup-services img {
+    width: 4rem;
+    margin: 0.3rem;
+  }
+  .leaflet-container {
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+  }
 }
