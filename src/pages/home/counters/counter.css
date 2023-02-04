@@ -4,7 +4,7 @@
   justify-content: space-around;
   gap: 2rem;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .hero-figures > div {
   display: flex;

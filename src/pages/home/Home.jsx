@@ -13,8 +13,11 @@ import Timeline from "./timeline/Timeline";
 const home = () => {
   return (
     <>
-      <Hero />
-      <Counters />
+      <div className="heroAndCounters">
+        <Hero />
+        <Counters />
+      </div>
+
       <HomeServices />
       <HomeProducts />
       <HomeVideo />

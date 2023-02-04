@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { images } from "../../../constants";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./homeProducts.css";
 import { homeProductsData } from "../../../Data/ProductsData";
@@ -24,10 +24,20 @@ const HomeProducts = () => {
   return (
     <div>
       <Tabs
-        className="home_products-desktop app__container"
+        className="home_products-desktop app__container_padding section-shadow"
         selectedIndex={currentTabIndex}
         onSelect={setCurrentTabIndex}
       >
+        <img
+          className="home_products_semi-circle-outline"
+          src={images.outline_semiCircle}
+          alt="design"
+        />
+        <img
+          className="home_products_corner-circle"
+          src={images.small_corner_rectangle}
+          alt="design"
+        />
         <div className="home_products_info ">
           {homeProductsData.map((item, index) => (
             <TabPanel

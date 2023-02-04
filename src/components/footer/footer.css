@@ -1,8 +1,9 @@
 .footer {
   background: #000000;
   color: white;
-
   padding-top: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer_container {

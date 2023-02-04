@@ -19,7 +19,7 @@ function DummyHero() {
       // fade={true}
     >
       <Carousel.Item>
-        <div className="hero app__container">
+        <div className="hero app__container ">
           <div className="hero_left">
             <div className="head-text">Iot Based</div>
             <div className="sub_head-text">Energy Monitoring System</div>

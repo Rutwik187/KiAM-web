@@ -3,6 +3,8 @@
   margin-top: 3rem;
   padding: 5rem 1rem;
   max-width: 100vw;
+  position: relative;
+  z-index: 2;
 }
 .contact_us-head {
   display: flex;

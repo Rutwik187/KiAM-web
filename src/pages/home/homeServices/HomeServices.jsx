@@ -7,12 +7,13 @@ import { Link } from "react-router-dom";
 
 const HomeServices = () => {
   return (
-    <div className="home_services app__container">
-      {/* <img
+    <div className="home_services app__container_padding section-shadow">
+      <img
         className="home_services_light-red-bg"
         src={images.light_red_bg}
         alt="light red bg"
-      /> */}
+      />
+
       <div className="home_services-left">
         <div className="head-text">Services</div>
         <hr />
@@ -20,7 +21,7 @@ const HomeServices = () => {
           We build ready made websites, mobile applications, and elaborate
           online business services.
         </p>
-        <button className="button">Know More</button>
+        {/* <button className="button">Know More</button> */}
         <img
           className="hero_services_dotted-img"
           src={images.dotted_bg}
@@ -40,7 +41,7 @@ const HomeServices = () => {
               </Link>
             </div>
           ))}
-          <button className="button">Know More</button>
+          {/* <button className="button">Know More</button> */}
         </div>
       </div>
     </div>

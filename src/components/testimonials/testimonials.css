@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 
@@ -59,7 +60,7 @@
   margin-left: 2rem;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .testimonial-image img {
@@ -70,7 +71,7 @@
 .slider-arrows {
   position: absolute;
   bottom: -1rem;
-  left: 7rem;
+  left: 16rem;
 }
 
 .testimonial-button {
@@ -94,9 +95,10 @@
   border-radius: 0 999px 999px 0;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1000px) {
   .testimonial {
-    margin-top: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
   }
   .testimonial-container {
     margin-top: 2.5rem;
@@ -121,7 +123,7 @@
   }
 
   .testimonial-section p {
-    width: 85%;
+    /* width: 85%; */
     font-size: 1.2rem;
     margin: 0 auto;
     text-align: start;
@@ -148,7 +150,7 @@
   }
 
   .container-text {
-    width: 70%;
+    /* width: 70%; */
     margin: 2rem auto 0 auto;
     flex-direction: column;
     justify-content: center;

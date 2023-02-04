@@ -1,6 +1,8 @@
 .home_services {
+  z-index: 3;
   display: flex;
   position: relative;
+  background: white;
   /* box-shadow: var(--box-shadow); */
 }
 .home_services_light-red-bg {
@@ -10,6 +12,7 @@
   right: 0;
   /* box-shadow: var(--box-shadow); */
 }
+
 .home_services-left {
   width: 100%;
   display: flex;
@@ -29,8 +32,8 @@
 
 .hero_services_dotted-img {
   position: absolute;
-  bottom: 18%;
-  z-index: -1;
+  bottom: 15%;
+  z-index: 1 !important;
 }
 
 .home_services-right {
@@ -82,11 +85,11 @@
   text-align: center;
   cursor: pointer;
 
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255);
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   box-shadow: var(--box-shadow);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); */
   /* border-radius: 10px; */
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: all 0.3s;

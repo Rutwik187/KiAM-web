@@ -1,3 +1,6 @@
+.heroAndCounters {
+  min-height: 80vh;
+}
 .hero {
   display: flex;
   align-items: center;
@@ -47,12 +50,15 @@
   border: 2px solid var(--secondary-color) !important;
 }
 @media screen and (min-width: 900px) {
-  .hero {
-    height: 60vh;
-  }
 }
 
 @media screen and (max-width: 900px) {
+  .hero {
+    height: 80vh;
+  }
+  .heroAndCounters {
+    height: 100%;
+  }
   .carousel-inner {
     z-index: 1;
   }

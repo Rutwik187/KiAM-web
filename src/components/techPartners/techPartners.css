@@ -1,5 +1,5 @@
 .TechPartners {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 .tech_partners-head {
   text-align: center;
@@ -17,4 +17,7 @@
   margin: 0 auto;
   text-align: center;
   outline: none;
+}
+
+@media screen and (max-width: 900px) {
 }
