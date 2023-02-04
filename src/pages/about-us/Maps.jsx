@@ -33,23 +33,26 @@ const Maps = () => {
           icon={icon}
         >
           <Popup>
-            <div className="map-pop-up">
-              {/* <h1>{data.Location}</h1>
-              <p>Total cases: {data.Total_Cases}</p>
-              <p>New cases (1 day*): {data.New_Cases_Per_Day}</p>
-              <p>
-                Cases per 1 million people: {data.Cases_Per_1_Million_People}
-              </p>
-              <p>Deaths: {data.Deaths}</p> */}
-              <div className="sub_head-text">
+            <div className="maps_popup">
+              <img className="shop-img" src={images.PNGJwellers} alt="shop" />
+              <div className="maps_popup-title">
                 PNG Jewellery, {data.Location}
               </div>
-              <hr className="hr" />
-              <div className="p-text">CK Store, Mumbai</div>
-              <hr className="hr" />
-              <div className="p-text">sales: {data.Deaths}</div>
-              <hr className="hr" />
-              <div className="p-text">ICICI, Ghansoli, Mumbai</div>
+              <hr />
+              {/* <div className="p-text">Project</div> */}
+
+              <div className="p-text">
+                Security for jewellery store. <br />
+                CCTC, 24/7 Monitoring, intrusion panel
+              </div>
+              <div className="maps_popup-services">
+                <img src={images.totalMonitoring} alt="total monitoring" />
+                <img src={images.cctv} alt="cctv" />
+                <img
+                  src={images.instructionalPanel}
+                  alt="instructional Panel"
+                />
+              </div>
             </div>
           </Popup>
         </Marker>
