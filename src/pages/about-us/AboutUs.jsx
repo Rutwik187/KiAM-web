@@ -33,6 +33,11 @@ const AboutUs = () => {
           We build readymade websites, mobile applications, and elaborate online
           business services.
         </div>
+        <img
+          className="hero_aboutUs_dotted-img"
+          src={images.dotted_bg}
+          alt="dotted background"
+        />
         <div>
           <Slider {...settings}>
             <img src={images.site1} alt="" />

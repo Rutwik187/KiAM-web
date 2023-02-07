@@ -1,8 +1,15 @@
-.home_services {
+.home_services-white {
   z-index: 3;
   display: flex;
   position: relative;
   background: white;
+  /* box-shadow: var(--box-shadow); */
+}
+.home_services {
+  z-index: 3;
+  display: flex;
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
   /* box-shadow: var(--box-shadow); */
 }
 .home_services_light-red-bg {
@@ -138,6 +145,13 @@
 
 @media screen and (max-width: 900px) {
   .home_services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    /* z-index: -1; */
+    margin-bottom: 2rem;
+  }
+  .home_services-white {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;

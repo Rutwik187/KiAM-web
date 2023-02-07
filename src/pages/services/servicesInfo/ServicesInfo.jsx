@@ -9,7 +9,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import Testimonials from "../../../components/testimonials/Testimonials";
 
-const ServicesInfo = () => {
+const ServicesInfo = ({ className }) => {
   let { tabId } = useParams();
 
   console.log(tabId);
@@ -29,7 +29,7 @@ const ServicesInfo = () => {
       onSelect={(index) => setTabIndex(index)}
       className=" servicesInfo-container"
     >
-      <div className="home_services app__container ">
+      <div className="home_services-white app__container ">
         <img
           className="home_services_light-red-bg"
           src={images.light_red_bg}

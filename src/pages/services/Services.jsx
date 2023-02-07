@@ -6,7 +6,7 @@ import TechPartners from "../../components/techPartners/TechPartners";
 const Services = () => {
   return (
     <div>
-      <ServicesInfo />
+      <ServicesInfo className="white-bg" />
 
       <TechPartners />
     </div>

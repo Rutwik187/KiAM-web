@@ -1,4 +1,6 @@
 .products-hero {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
   position: relative;
   /* box-shadow: var(--box-shadow); */
@@ -25,9 +27,10 @@
   margin-bottom: 2rem;
 }
 
-.hero_services_dotted-img {
+.hero_products_dotted-img {
   position: absolute;
-  bottom: 18%;
+  top: -12%;
+  left: -50%;
   z-index: -1;
 }
 
@@ -37,7 +40,9 @@
 .products-right li {
   list-style: none;
 }
-
+.products-page-semi-circle {
+  position: absolute;
+}
 .products-cards {
   display: flex;
   flex-wrap: wrap;
@@ -135,6 +140,9 @@
     margin-top: 0.5rem;
     /* z-index: -1; */
     margin-bottom: 2rem;
+  }
+  .hero_products_dotted-img {
+    display: none;
   }
   .products-hero {
     display: none;

@@ -19,9 +19,9 @@ const Products = () => {
     <Tabs
       selectedIndex={tabIndex}
       onSelect={(index) => setTabIndex(index)}
-      className="products app__container"
+      className="products "
     >
-      <div className="products-hero ">
+      <div className=" app__container products-hero section-shadow">
         <div className="products-left">
           <div className="head-text">Products</div>
           <hr className="hr" />
@@ -31,7 +31,7 @@ const Products = () => {
           </p>
           {/* <button className="button">Know More</button> */}
           <img
-            className="hero_services_dotted-img"
+            className="hero_products_dotted-img"
             src={images.dotted_bg}
             alt="dotted background"
           />
@@ -49,6 +49,11 @@ const Products = () => {
             ))}
           </TabList>
         </div>
+        <img
+          className="products-page-semi-circle"
+          src={images.outline_semiCircle}
+          alt="design"
+        />
       </div>
 
       <div className="products-hero-mobile ">
@@ -66,7 +71,7 @@ const Products = () => {
             alt="dotted background"
           />
         </div>
-        <div className="products-right app__flex">
+        <div className="products-right  app__flex">
           <TabList>
             <Carousel
               activeIndex={index}
@@ -107,7 +112,7 @@ const Products = () => {
 
       {ProductsInfo.map((item, index) => (
         <TabPanel key={index}>
-          <div className="product-info">
+          <div className="product-info app__container">
             <div className="head-text">{item.title}</div>
             <hr className="hr" />
             <div className="p-text">{item.title_desc}</div>
@@ -125,7 +130,7 @@ const Products = () => {
             </div>
           </div>
 
-          <div className="product-benefits">
+          <div className="product-benefits app__container">
             <div className="head-text">{item.benefits_title}</div>
             <hr className="hr" />
             <div className="p-text">{item.benefits_desc}</div>
@@ -145,7 +150,9 @@ const Products = () => {
           </div>
         </TabPanel>
       ))}
-      <Testimonials />
+      <div className="app__container">
+        <Testimonials />
+      </div>
     </Tabs>
   );
 };
