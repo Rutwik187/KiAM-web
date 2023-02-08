@@ -26,7 +26,7 @@ const AboutUs = () => {
   };
   return (
     <div>
-      <div className="about_us-recent_sites app__container">
+      <div className="about_us app__container">
         <div className="head-text">Top Recent Sites</div>
         <hr className="hr" />
         <div className="p-text">
@@ -38,14 +38,50 @@ const AboutUs = () => {
           src={images.dotted_bg}
           alt="dotted background"
         />
-        <div>
+        <div className="about-us__sites-slider">
           <Slider {...settings}>
-            <img src={images.site1} alt="" />
-            <img src={images.site1} alt="" />
-            <img src={images.site1} alt="" />
-            <img src={images.site1} alt="" />
-            <img src={images.site1} alt="" />
-            <img src={images.site1} alt="" />
+            <div className="about-us-recent-site">
+              <img src={images.site1} alt="" />
+              <div className="about-us-recent-site-caption">
+                <div className="p-text">Style Union</div>
+                <div>Pune</div>
+              </div>
+            </div>
+            <div className="about-us-recent-site">
+              <img src={images.site1} alt="" />
+              <div className="about-us-recent-site-caption">
+                <div className="p-text">Style Union</div>
+                <div>Pune</div>
+              </div>
+            </div>
+            <div className="about-us-recent-site">
+              <img src={images.site1} alt="" />
+              <div className="about-us-recent-site-caption">
+                <div className="p-text">Style Union</div>
+                <div>Pune</div>
+              </div>
+            </div>
+            <div className="about-us-recent-site">
+              <img src={images.site1} alt="" />
+              <div className="about-us-recent-site-caption">
+                <div className="p-text">Style Union</div>
+                <div>Pune</div>
+              </div>
+            </div>
+            <div className="about-us-recent-site">
+              <img src={images.site1} alt="" />
+              <div className="about-us-recent-site-caption">
+                <div className="p-text">Style Union</div>
+                <div>Pune</div>
+              </div>
+            </div>
+            <div className="about-us-recent-site">
+              <img src={images.site1} alt="" />
+              <div className="about-us-recent-site-caption">
+                <div className="p-text">Style Union</div>
+                <div>Pune</div>
+              </div>
+            </div>
           </Slider>
         </div>
       </div>

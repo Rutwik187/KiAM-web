@@ -49,11 +49,11 @@ const Products = () => {
             ))}
           </TabList>
         </div>
-        <img
+        {/* <img
           className="products-page-semi-circle"
           src={images.outline_semiCircle}
           alt="design"
-        />
+        /> */}
       </div>
 
       <div className="products-hero-mobile ">
