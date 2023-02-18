@@ -2,7 +2,6 @@ import React from "react";
 import "./homeServices.css";
 import { images } from "../../../constants";
 import { servicesData } from "../../../Data/servicesData";
-import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 
 const HomeServices = () => {

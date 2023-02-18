@@ -1,0 +1,26 @@
+.products__tabs {
+  min-height: 80vh;
+}
+.products__tabs-body a {
+  text-decoration: none;
+  color: black;
+}
+.products__tabs-head {
+  display: flex;
+  justify-content: space-between;
+}
+.products__tabs-head .button {
+  background: black;
+  color: white;
+}
+.products__tabs-body .productCategories-cards {
+  gap: 3rem;
+}
+.products__tabs-body .productCategories-card {
+  width: 10rem;
+  height: 10rem;
+}
+.products__tabs-body .productCategories-card h5 {
+  line-height: 150%;
+  font-size: 0.9rem;
+}

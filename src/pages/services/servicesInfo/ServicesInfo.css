@@ -36,7 +36,7 @@
 }
 
 .complete-services-info {
-  padding: 4rem 12rem 5rem 10rem;
+  padding: 4rem 15rem 5rem 10rem;
 }
 .home_services-side-card img {
   width: 2rem;
@@ -57,7 +57,8 @@
 }
 .servicesImages {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   margin-top: 5rem;
 }
@@ -74,21 +75,43 @@
   color: var(--secondary-color);
   font-size: 1.4rem;
 }
-.servicesImages-gallery {
-  width: 30rem;
-  height: 30rem;
-  display: grid;
+
+.servicesBenefits-slider1 {
+  max-width: 70vw;
+  /* height: 30rem; */
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-row-gap: 10px; */
   margin-top: 2rem;
   flex: 1;
 }
+.servicesImages-gallery {
+  display: flex;
+}
+
+.servicesBenefits-gallery-block-2 {
+  margin-top: 2rem;
+  display: flex;
+}
+.servicesBenefits-gallery-block-2 .gallery-dotted-bg {
+  width: 24rem;
+  transform: translateX(-50%);
+}
+.servicesBenefits-slider2 {
+  z-index: 10;
+  max-width: 50vw;
+  margin-left: -12rem;
+}
+.gallery-slider-mobile {
+  display: none;
+}
 
 .servicesImages-gallery-img {
+  height: 10rem;
   position: relative;
-  display: flex;
+  display: flex !important;
   align-items: flex-end;
   transition: 0.6s ease-out;
 }
@@ -131,34 +154,18 @@
   opacity: 1;
 }
 
-.servicesImages-gallery1 {
-  grid-area: 1 / 1 / 2 / 3;
-}
-.servicesImages-gallery2 {
-  grid-area: 1 / 3 / 2 / 4;
-}
-.servicesImages-gallery3 {
-  grid-area: 1 / 4 / 2 / 5;
-}
-.servicesImages-gallery4 {
-  grid-area: 2 / 1 / 3 / 3;
-}
-.servicesImages-gallery5 {
-  grid-area: 2 / 3 / 3 / 5;
-}
-.servicesImages-gallery6 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.servicesImages-gallery7 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-.servicesImages-gallery8 {
-  grid-area: 3 / 3 / 4 / 5;
-}
 .servicesImages-gallery-caption {
   color: white;
 }
 
+.carousel-services-gallery-mobile {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carousel-services-gallery-mobile .servicesImages-gallery-img {
+  width: 5rem;
+  height: 5rem;
+}
 .servicesVideo {
   display: flex;
   align-items: center;
@@ -182,6 +189,12 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .gallery-slider-mobile {
+    display: block;
+  }
+  .gallery-slider-desktop {
+    display: none;
+  }
   .complete-services-info {
     padding: 4rem 4rem 2rem 5rem;
   }
@@ -194,6 +207,9 @@
   .servicesInfo-container {
     padding-right: 0rem;
   }
+  .servicesBenefits-gallery-block-2 .gallery-dotted-bg {
+    display: none;
+  }
   .servicesImages-gallery {
     width: 100%;
     height: 30rem;
@@ -204,30 +220,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .servicesImages-gallery1 {
-    grid-area: 1 / 1 / 2 / 4;
-  }
-  .servicesImages-gallery2 {
-    grid-area: 1 / 4 / 2 / 6;
-  }
-  .servicesImages-gallery3 {
-    grid-area: 2 / 1 / 3 / 3;
-  }
-  .servicesImages-gallery4 {
-    grid-area: 2 / 3 / 3 / 6;
-  }
-  .servicesImages-gallery5 {
-    grid-area: 3 / 1 / 4 / 4;
-  }
-  .servicesImages-gallery6 {
-    grid-area: 3 / 4 / 4 / 6;
-  }
-  .servicesImages-gallery7 {
-    grid-area: 4 / 1 / 5 / 3;
-  }
-  .servicesImages-gallery8 {
-    grid-area: 4 / 3 / 5 / 6;
-  }
+
   .servicesImages-gallery-img {
     height: 6rem;
   }
@@ -245,6 +238,12 @@
   }
 }
 @media screen and (max-width: 450px) {
+  .gallery-slider-mobile {
+    display: block;
+  }
+  .gallery-slider-desktop {
+    display: none;
+  }
   .servicesVideo {
     margin-top: 5rem;
   }

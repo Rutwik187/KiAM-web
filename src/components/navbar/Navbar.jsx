@@ -37,7 +37,7 @@ const Navbar = () => {
           </li>
           <li className="app__flex p-text">
             <div />
-            <Link to="/products">Products</Link>
+            <Link to="/productCategory">Products</Link>
           </li>
           <li className="app__flex p-text">
             <div />
@@ -66,7 +66,7 @@ const Navbar = () => {
                   <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/products">Products</Link>
+                  <Link to="/productCategory">Products</Link>
                 </li>
                 <li>
                   <Link to="/about-us">About Us</Link>

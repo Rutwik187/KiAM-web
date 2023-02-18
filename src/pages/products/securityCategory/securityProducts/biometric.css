@@ -1,0 +1,22 @@
+.products__tabList .head-text {
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+.security__technology__points {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.security__technology__points li {
+  width: 15rem;
+  margin: 0.3rem;
+}
+.security__keyFeatures__points {
+  display: flex;
+}
+.security__keyFeatures__points li {
+  margin: 0.3rem;
+}
+.security__keyFeatures__points-col1 {
+  width: 25rem;
+}

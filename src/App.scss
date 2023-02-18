@@ -73,7 +73,7 @@
 
 .button{
   background: var(--secondary-color);
-  width: 10rem;
+  width: fit-content;
   height: 3rem;
   border-radius: 8px;
   border-style: none;
@@ -170,6 +170,8 @@ line-height: 3rem;
   text-align: left;
 
   line-height: 1.5;
+  color:  rgba(86, 86, 86, 1);
+
 
   @media screen and (min-width: 2000px) {
     font-size: 1.75rem;

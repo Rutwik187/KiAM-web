@@ -1,21 +1,24 @@
-.products-hero {
+.productCategories a {
+  text-decoration: none;
+  color: var(--black);
+}
+.productCategories-hero {
+  min-height: 80vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
   position: relative;
   /* box-shadow: var(--box-shadow); */
 }
-.products-hero-mobile {
-  display: none;
-}
-.products_light-red-bg {
+
+.productCategories_light-red-bg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
   /* box-shadow: var(--box-shadow); */
 }
-.products-left {
+.productCategories-left {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,41 +26,44 @@
   position: relative;
 }
 
-.products-left p {
+.productCategories-left p {
   margin-bottom: 2rem;
 }
 
-.hero_products_dotted-img {
+.hero_productCategories_dotted-img {
   position: absolute;
   top: -5%;
   left: -50%;
   z-index: -1;
 }
 
-.products-right {
+.productCategories-right {
+  margin-top: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
 }
-.products-right li {
+.productCategories-right li {
   list-style: none;
 }
-.products-page-semi-circle {
+.productCategories-page-semi-circle {
   top: 0;
   right: 0;
   transform: translateY(-50%);
   position: absolute;
 }
-.products-cards {
+.productCategories-cards {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-
-  gap: 1rem;
+  gap: 2rem;
 }
 
-.products-card {
+.productCategories-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 8rem;
   height: 8rem;
   position: relative;
@@ -79,25 +85,21 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   transition: all 0.2s;
 }
-.products-card:hover {
-  box-shadow: var(--secondary-box-shadow);
-  border: 3px solid var(--secondary-color);
-}
-.products-hero-mobile .react-tabs__tab--selected {
+.productCategories-card:hover {
   box-shadow: var(--secondary-box-shadow);
   border: 3px solid var(--secondary-color);
 }
 
-.products-card img {
+.productCategories-card img {
   width: 3rem;
 }
-.products-card-textInfo h5 {
-  font-weight: bold;
+.productCategories-card-textInfo h5 {
+  font-weight: 500;
   font-size: 0.8rem;
   margin-bottom: 5px;
   line-height: 120%;
 }
-.products-card-textInfo p {
+.productCategories-card-textInfo p {
   font-weight: 400;
   font-size: 0.6rem;
   line-height: 120%;
@@ -130,72 +132,70 @@
   margin: 2rem 0rem;
 }
 
-.products-benefits-vid img {
+.productCategories-benefits-vid img {
   width: 40rem;
 }
-.products-benefits-desc ul li {
+.productCategories-benefits-desc ul li {
   margin: 1rem;
 }
 @media screen and (max-width: 900px) {
-  .products-page-semi-circle {
+  .productCategories-page-semi-circle {
     display: none;
   }
-  .products-hero {
+  .productCategories-hero {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
     /* z-index: -1; */
     margin-bottom: 2rem;
   }
-  .hero_products_dotted-img {
+  .hero_productCategories_dotted-img {
     display: none;
-  }
-  .products-hero {
-    display: none;
-  }
-  .products-hero-mobile {
-    display: block;
   }
 
-  .products-left {
+  .productCategories-left {
     width: 100%;
     align-items: center;
   }
-  .products-left p {
+  .productCategories-left p {
     text-align: center;
   }
 
-  .products-left img {
+  .productCategories-left img {
     display: none;
   }
 
-  .products_light-red-bg {
+  .productCategories_light-red-bg {
     display: none;
   }
-  .products-right ul {
+  .productCategories-right {
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .productCategories-right ul {
     padding: 0;
   }
-  .products-card {
+  .productCategories-card {
     width: 8rem;
     height: 9rem;
     border-radius: 10px;
     padding: 0.5rem;
     gap: 0.5rem;
   }
-  .products-card:hover {
+  .productCategories-card:hover {
     box-shadow: var(--secondary-box-shadow);
   }
-  .products-cards {
+  .productCategories-cards {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
   }
-  .products-card h5 {
+  .productCategories-card h5 {
     font-size: 1rem;
   }
-  .products-card p {
+  .productCategories-card p {
     font-size: 0.8rem;
   }
   .product-info {
@@ -242,10 +242,10 @@
     margin: 2rem 0rem;
   }
 
-  .products-benefits-vid img {
+  .productCategories-benefits-vid img {
     width: 95%;
   }
-  .products-benefits-desc ul li {
+  .productCategories-benefits-desc ul li {
     margin: 1rem;
   }
 }
