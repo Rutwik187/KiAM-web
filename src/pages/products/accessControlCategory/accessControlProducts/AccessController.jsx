@@ -1,10 +1,10 @@
 import "./accessController.css";
-import { securityData } from "../../../../Data/ProductsData";
+import { accessControlData } from "../../../../Data/ProductsData";
 
 const AccessController = () => {
   return (
     <div className="products__tabList">
-      {securityData.slice(0, 1).map((item, index) => (
+      {accessControlData.slice(0, 1).map((item, index) => (
         <div key={index}>
           <div className="head-text">{item.title}</div>
           <hr className="hr" />

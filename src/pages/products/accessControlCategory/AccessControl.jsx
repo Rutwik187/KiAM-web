@@ -1,19 +1,19 @@
-import "./securityCategory.css";
-import AccessController from "./securityProducts/AccessController";
-import { securityData } from "../../../Data/ProductsData";
+import "./accessControl.css";
+import AccessController from "./accessControlProducts/AccessController";
+import { accessControlData } from "../../../Data/ProductsData";
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import TimeAttendance from "./securityProducts/TimeAttendance";
-import Biometric from "./securityProducts/Biometric";
-import AccessCard from "./AccessCard";
-import ElectrionicCards from "./securityProducts/ElectrionicCards";
-import VisitorManagement from "./securityProducts/VisitorManagement";
-import LiftAccessControl from "./securityProducts/LiftAccessControl";
-import DoorInterLocking from "./securityProducts/DoorInterLocking";
+import TimeAttendance from "./accessControlProducts/TimeAttendance";
+import Biometric from "./accessControlProducts/Biometric";
+import AccessCard from "./accessControlProducts/AccessCard";
+import ElectronicLocksAndDoors from "./accessControlProducts/ElectronicLocksAndDoors";
+import VisitorManagement from "./accessControlProducts/VisitorManagement";
+import LiftAccessControl from "./accessControlProducts/LiftAccessControl";
+import DoorInterLocking from "./accessControlProducts/DoorInterLocking";
 
 import { HashLink } from "react-router-hash-link";
 
-const SecurityCategory = () => {
+const AccessControl = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
   return (
     <Tabs selectedIndex={currentTabIndex} onSelect={setCurrentTabIndex}>
@@ -23,9 +23,9 @@ const SecurityCategory = () => {
           <button className="button">Show Category</button>
         </div>
         <div className="products__tabs-body">
-          <HashLink smooth to="/productCategory/security#CategoryProduct">
+          <HashLink smooth to="/productCategory/access-control#CategoryProduct">
             <TabList className="productCategories-cards">
-              {securityData.map((item, index) => (
+              {accessControlData.map((item, index) => (
                 <Tab key={index} className="productCategories-card">
                   <img src={item.icon} alt="product" />
                   <div className="productCategories-card-textInfo">
@@ -51,7 +51,7 @@ const SecurityCategory = () => {
           <AccessCard />
         </TabPanel>
         <TabPanel>
-          <ElectrionicCards />
+          <ElectronicLocksAndDoors />
         </TabPanel>
         <TabPanel>
           <VisitorManagement />
@@ -67,4 +67,4 @@ const SecurityCategory = () => {
   );
 };
 
-export default SecurityCategory;
+export default AccessControl;

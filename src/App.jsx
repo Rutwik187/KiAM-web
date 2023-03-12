@@ -8,7 +8,7 @@ import ErrorPage from "./pages/error-page/ErrorPage";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ContactUs from "./components/contactUs/ContactUs";
-import SecurityCategory from "./pages/products/securityCategory/SecurityCategory";
+import AccessControl from "./pages/products/accessControlCategory/AccessControl";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
           <Route path="/services/:tabId" element={<Services />} />
           <Route path="/productCategory" element={<ProductCategories />} />
           <Route
-            path="/productCategory/security"
-            element={<SecurityCategory />}
+            path="/productCategory/access-control"
+            element={<AccessControl />}
           />
 
           <Route path="/about-us" element={<AboutUs />} />

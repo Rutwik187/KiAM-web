@@ -16,10 +16,14 @@
 .products__tabs-body .productCategories-cards {
   gap: 3rem;
 }
+.productCategories-cards .react-tabs__tab--selected {
+  border: 3px solid var(--secondary-color);
+}
 .products__tabs-body .productCategories-card {
   width: 10rem;
   height: 10rem;
 }
+
 .products__tabs-body .productCategories-card h5 {
   line-height: 150%;
   font-size: 0.9rem;

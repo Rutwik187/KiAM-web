@@ -1,0 +1,75 @@
+.products__tabList {
+  margin-top: 4rem;
+  /* margin-right: 6rem; */
+}
+.products__tabList .bold-text {
+  font-weight: 600;
+}
+.products__tablist-img-points {
+  margin: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.products__tablist-img-points img {
+  width: 30rem;
+}
+.products__tablist-img-points ul li {
+  /* font-size: 1.2rem; */
+  margin: 1rem;
+}
+.products__tablist-img-points ul button {
+  width: 100%;
+}
+.product__tablist-product-img-features-cards {
+  display: flex;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+.product__tablist-product-img-features-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.product__tablist-product-img-features-card img {
+  width: 10rem;
+}
+
+@media (max-width: 1200px) {
+  .products__tabList {
+    margin: 0;
+  }
+}
+@media (max-width: 1050px) {
+  .products__tablist-img-points {
+    flex-direction: column;
+  }
+  .products__tablist-img-points {
+    gap: 2rem;
+    margin: 2rem 0;
+    align-items: flex-start;
+  }
+  .products__tablist-img-points img {
+    width: 20rem;
+  }
+  .product__tablist-product-img-features-cards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .security__keyFeatures__points {
+    flex-direction: column;
+  }
+  .biometricImg {
+    max-width: 100%;
+  }
+  .security__keyFeatures__points-col1 {
+    width: fit-content;
+  }
+  .architecture-flex {
+    flex-direction: column;
+  }
+  .architecture-flex:nth-child(1) {
+    border: none;
+  }
+}

@@ -1,5 +1,8 @@
 .heroAndCounters {
   min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .hero {
   display: flex;

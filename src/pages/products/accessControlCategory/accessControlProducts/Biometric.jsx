@@ -1,15 +1,15 @@
-import { securityData } from "../../../../Data/ProductsData";
+import { accessControlData } from "../../../../Data/ProductsData";
 import "./biometric.css";
 
 const Biometric = () => {
   return (
     <div className="products__tabList">
-      {securityData.slice(2, 3).map((item, index) => (
+      {accessControlData.slice(2, 3).map((item, index) => (
         <div key={index}>
           <div className="head-text">{item.title}</div>
           <hr className="hr" />
           <div className="p-text">{item.desc}</div>
-          <img src={item.img} alt="product" />
+          <img className="biometricImg" src={item.img} alt="product" />
           <div className="head-text">Technology</div>
           <div className="security__technology__points">
             {item.technologyPoints.map((point, index) => (
