@@ -1,6 +1,6 @@
 import React from "react";
 import { images } from "../../../../constants";
-import "../intrusion.css";
+
 import { HashLink } from "react-router-hash-link";
 
 const PirMonitorSensors = () => {
