@@ -9,7 +9,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ContactUs from "./components/contactUs/ContactUs";
 import AccessControl from "./pages/products/accessControlCategory/AccessControl";
-import Intrusion from "./pages/products/intrusionCategory/intrusion";
+import Intrusion from "./pages/products/intrusionCategory/Intrusion";
 import FireAlarmSystem from "./pages/products/fireAlarmSystem/FireAlarmSystem";
 
 function App() {
