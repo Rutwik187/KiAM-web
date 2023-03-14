@@ -3,7 +3,7 @@
   color: var(--black);
 }
 .productCategories-hero {
-  min-height: 80vh;
+  /* min-height: 80vh; */
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;

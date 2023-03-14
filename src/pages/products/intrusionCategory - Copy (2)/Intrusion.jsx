@@ -1,33 +1,29 @@
 import "../productsLists.css";
-import AccessController from "./accessControlProducts/AccessController";
-import { accessControlData } from "../../../Data/ProductsData";
+import AtmSensors from "./intrusionProducts/AtmSensors";
+import BranchMonitoring from "./intrusionProducts/BranchMonitoring";
+import IntegratedSecurityPanel from "./intrusionProducts/IntegratedSecurityPanel";
+import PirMonitoringSensors from "./intrusionProducts/PirMonitorSensors";
+import PerimeterIntrusionSensors from "./intrusionProducts/PerimeterIntrusionSensors";
+import SensorsForBank from "./intrusionProducts/SensorsForBanks";
+import { intrusionData } from "../../../Data/ProductsData";
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import TimeAttendance from "./accessControlProducts/TimeAttendance";
-import Biometric from "./accessControlProducts/Biometric";
-import AccessCard from "./accessControlProducts/AccessCard";
-import ElectronicLocksAndDoors from "./accessControlProducts/ElectronicLocksAndDoors";
-import VisitorManagement from "./accessControlProducts/VisitorManagement";
-import LiftAccessControl from "./accessControlProducts/LiftAccessControl";
-import DoorInterLocking from "./accessControlProducts/DoorInterLocking";
 
 import { HashLink } from "react-router-hash-link";
 
-const AccessControl = () => {
+const Intrusion = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
   return (
     <Tabs selectedIndex={currentTabIndex} onSelect={setCurrentTabIndex}>
       <div className="products__tabs app__container section-shadow">
         <div className="products__tabs-head">
           <div className="sub_head-text">Select Product</div>
-          <Link to="/productCategory">
-            <button className="button">Show Category</button>
-          </Link>
+          <button className="button">Show Category</button>
         </div>
         <div className="products__tabs-body">
-          <HashLink smooth to="/productCategory/access-control#CategoryProduct">
+          <HashLink smooth to="/productCategory/intrusion#CategoryProduct">
             <TabList className="productCategories-cards">
-              {accessControlData.map((item, index) => (
+              {intrusionData.map((item, index) => (
                 <Tab key={index} className="productCategories-card">
                   <img src={item.icon} alt="product" />
                   <div className="productCategories-card-textInfo">
@@ -41,32 +37,26 @@ const AccessControl = () => {
       </div>
       <div className="app__container" id="CategoryProduct">
         <TabPanel>
-          <AccessController />
+          <BranchMonitoring />
         </TabPanel>
         <TabPanel>
-          <TimeAttendance />
+          <SensorsForBank />
         </TabPanel>
         <TabPanel>
-          <Biometric />
+          <AtmSensors />
         </TabPanel>
         <TabPanel>
-          <AccessCard />
+          <PerimeterIntrusionSensors />
         </TabPanel>
         <TabPanel>
-          <ElectronicLocksAndDoors />
+          <PirMonitoringSensors />
         </TabPanel>
         <TabPanel>
-          <VisitorManagement />
-        </TabPanel>
-        <TabPanel>
-          <LiftAccessControl />
-        </TabPanel>
-        <TabPanel>
-          <DoorInterLocking />
+          <IntegratedSecurityPanel />
         </TabPanel>
       </div>
     </Tabs>
   );
 };
 
-export default AccessControl;
+export default Intrusion;

@@ -1,19 +1,15 @@
 import "../productsLists.css";
-import AccessController from "./accessControlProducts/AccessController";
-import { accessControlData } from "../../../Data/ProductsData";
+import { Link } from "react-router-dom";
+import { fireAlarmData } from "../../../Data/ProductsData";
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import TimeAttendance from "./accessControlProducts/TimeAttendance";
-import Biometric from "./accessControlProducts/Biometric";
-import AccessCard from "./accessControlProducts/AccessCard";
-import ElectronicLocksAndDoors from "./accessControlProducts/ElectronicLocksAndDoors";
-import VisitorManagement from "./accessControlProducts/VisitorManagement";
-import LiftAccessControl from "./accessControlProducts/LiftAccessControl";
-import DoorInterLocking from "./accessControlProducts/DoorInterLocking";
 
 import { HashLink } from "react-router-hash-link";
+import FirePanels from "./fireAlarmSystemProducts/FirePanels";
+import FireSensors from "./fireAlarmSystemProducts/FireSensors";
+import FireSeparationSystems from "./fireAlarmSystemProducts/FireSeparationSystems";
 
-const AccessControl = () => {
+const FireAlarmSystem = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
   return (
     <Tabs selectedIndex={currentTabIndex} onSelect={setCurrentTabIndex}>
@@ -25,9 +21,9 @@ const AccessControl = () => {
           </Link>
         </div>
         <div className="products__tabs-body">
-          <HashLink smooth to="/productCategory/access-control#CategoryProduct">
+          <HashLink smooth to="/productCategory/fire-alarm#CategoryProduct">
             <TabList className="productCategories-cards">
-              {accessControlData.map((item, index) => (
+              {fireAlarmData.map((item, index) => (
                 <Tab key={index} className="productCategories-card">
                   <img src={item.icon} alt="product" />
                   <div className="productCategories-card-textInfo">
@@ -41,32 +37,17 @@ const AccessControl = () => {
       </div>
       <div className="app__container" id="CategoryProduct">
         <TabPanel>
-          <AccessController />
+          <FirePanels />
         </TabPanel>
         <TabPanel>
-          <TimeAttendance />
+          <FireSensors />
         </TabPanel>
         <TabPanel>
-          <Biometric />
-        </TabPanel>
-        <TabPanel>
-          <AccessCard />
-        </TabPanel>
-        <TabPanel>
-          <ElectronicLocksAndDoors />
-        </TabPanel>
-        <TabPanel>
-          <VisitorManagement />
-        </TabPanel>
-        <TabPanel>
-          <LiftAccessControl />
-        </TabPanel>
-        <TabPanel>
-          <DoorInterLocking />
+          <FireSeparationSystems />
         </TabPanel>
       </div>
     </Tabs>
   );
 };
 
-export default AccessControl;
+export default FireAlarmSystem;

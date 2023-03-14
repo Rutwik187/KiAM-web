@@ -9,6 +9,8 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import ContactUs from "./components/contactUs/ContactUs";
 import AccessControl from "./pages/products/accessControlCategory/AccessControl";
+import Intrusion from "./pages/products/intrusionCategory/intrusion";
+import FireAlarmSystem from "./pages/products/fireAlarmSystem/FireAlarmSystem";
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
           <Route
             path="/productCategory/access-control"
             element={<AccessControl />}
+          />
+          <Route path="/productCategory/intrusion" element={<Intrusion />} />
+
+          <Route
+            path="/productCategory/fire-alarm"
+            element={<FireAlarmSystem />}
           />
 
           <Route path="/about-us" element={<AboutUs />} />

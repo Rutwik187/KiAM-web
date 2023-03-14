@@ -34,8 +34,8 @@ export const ProductCategories = [
     },
     {
         icon: images.product1Icon,
-        name: "Instrusion",
-        route: "instrusion"
+        name: "Intrusion",
+        route: "intrusion"
     },
     {
         icon: images.product1Icon,
@@ -59,7 +59,6 @@ export const ProductCategories = [
     }
 
 ]
-
 export const accessControlData = [
     {
         icon: images.gpsTracking,
@@ -216,4 +215,102 @@ export const accessControlData = [
         primaryImg: images.doorInterlockingSystem,
         desc2: "Our intelligent Door Interlock System is the one which, on request, allows opening of one door at a time.A fully programmable system can be set up for 2, 4 and 8 doors. It lets users program interlocking groups through USB communication."
     }
+]
+export const intrusionData = [
+    {
+        icon: images.gpsTracking,
+        title: "Panel for bank branch monitoring",
+        img: images.panelForBankBranch,
+        points: ['Monitoring of Different Inputs in ATM such removal sensors, panic switch, smoke detector as to avoid theft of Cash and provide adequate safety to Customers i.e ATM users',
+            'Attendance for Guard, House Keeping, CRA (Cash Replacement Agency) Attendance - using Biometric / Card system',
+            ' CCTV event based image capturing for easy first level investigation and Recording for evidences',
+            'OTP (One Time Password ) based Access control of Back Room Door used for ATM Utility Equipment storage',
+            'HVAC Power / Energy monitoring for power saving',
+            ' Control of signage , Lobby Light with auto scheduling as well as manual control from CMS',
+            ' ATM Lobby Temperature monitoring for comfort and energy saving',
+            'Centralized monitoring and control/ configuration for Total Control on ATM infrastructure from Security perspective',
+            'Centralized monitoring required for work flow management viz Alert Management, Vendor management; ticket management, Meaningful MIS report']
+
+    },
+    {
+        icon: images.gpsTracking,
+        title: "Sensors for banks",
+        img: images.sensorsForBanksImg,
+        subTitle1: 'Monitoring Panel – Sensors',
+        points1: ['Monitoring of Different Inputs in ATM such removal sensors, panic switch, smoke detector as to avoid theft of Cash and provide adequate safety to Customers i.e ATM users',
+            ' Attendance for Guard, House Keeping, CRA (Cash Replacement Agency) Attendance - using Biometric / Card system',
+            ' CCTV event based image capturing for easy first level investigation and Recording for evidences',
+            'OTP (One Time Password ) based Access control of Back Room Door used for ATM Utility Equipment storage'
+        ],
+        subTitle2: "Monitoring Panel – Outputs",
+        points2: ['Hooter to alert Guard',
+            ' Network switch restart',
+            'Access Door Open for front and rear door',
+            'Door open for Cheque Drop box',
+            ' Door Open for ATM Cash deposit',
+            '   AC Power control',
+            ' Light control',
+            ' Buzzer for Door open too long',
+            'CCTV Event based image capture and motion based storage'
+        ]
+    },
+    {
+        icon: images.gpsTracking,
+        title: "ATM Sensor",
+        img: images.atmSensorsImg,
+        subTitle: "The key features of ATM sensor are:",
+        points: ['Chest Door Open /close',
+            'Vibration Detection',
+            'Smoke Detection',
+            ' back door access',
+            'Vibration Detection',
+            ' Guard attendance',
+            ' House keeping Monitoring',
+            'Fog generator for theft prevention']
+    },
+    {
+        icon: images.gpsTracking,
+        title: "Perimeter Intrusion Sensors",
+        points1: [
+            'PIDS providing early intrusion detection while cameras provide real-time assessment capabilities',
+            'PIDS is a device or sensor that detects the presence of an intruder attempting to breach the physical perimeter of a property, building, or other secured area'
+        ],
+        img: images.perimeterIntrusionSensorsImg,
+        subTitle1: 'The key features & benifit',
+        points2: [
+            '            Plug and Play: Simple installation, easy short and training',
+            'Volumetric Detection: High level protection',
+            'Line of sight: Our sensor feels the treat',
+            'Flexible Layout: Can be installed in sections / Continuous according to needs',
+            'Whether proof: Immune to weather conditions (Rain , fog , wind ,day & night)'
+        ]
+
+    },
+    {
+        icon: images.gpsTracking,
+        title: "PIR Motion Sensors",
+
+    },
+    {
+        icon: images.gpsTracking,
+        title: "Integrated Security Panel"
+    }
+]
+export const fireAlarmData = [
+    {
+
+        icon: images.gpsTracking,
+        title: "Fire Panels",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "Sensors",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "Separation System",
+    }
+
 ]
