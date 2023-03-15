@@ -1,29 +1,34 @@
 import "../productsLists.css";
-import AtmSensors from "./intrusionProducts/AtmSensors";
-import BranchMonitoring from "./intrusionProducts/BranchMonitoring";
-import IntegratedSecurityPanel from "./intrusionProducts/IntegratedSecurityPanel";
-import PirMonitoringSensors from "./intrusionProducts/PirMonitorSensors";
-import PerimeterIntrusionSensors from "./intrusionProducts/PerimeterIntrusionSensors";
-import SensorsForBank from "./intrusionProducts/SensorsForBanks";
-import { intrusionData } from "../../../Data/ProductsData";
+
+import { energyMonitoringData } from "../../../Data/ProductsData";
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import { HashLink } from "react-router-hash-link";
+import SmartMetering from "./energyMonitoringProducts/SmartMetering";
+import SmartHVAC from "./energyMonitoringProducts/SmartHVAC";
+import LightControl from "./energyMonitoringProducts/LightControl";
+import UPSMonitoring from "./energyMonitoringProducts/UPSMonitoring";
+import { Link } from "react-router-dom";
 
-const Intrusion = () => {
+const EnergyMonitoring = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
   return (
     <Tabs selectedIndex={currentTabIndex} onSelect={setCurrentTabIndex}>
       <div className="products__tabs app__container section-shadow">
         <div className="products__tabs-head">
           <div className="sub_head-text">Select Product</div>
-          <button className="button">Show Category</button>
+          <Link to="/productCategory">
+            <button className="button">Show Category</button>
+          </Link>
         </div>
         <div className="products__tabs-body">
-          <HashLink smooth to="/productCategory/intrusion#CategoryProduct">
+          <HashLink
+            smooth
+            to="/productCategory/energy-monitoring#CategoryProduct"
+          >
             <TabList className="productCategories-cards">
-              {intrusionData.map((item, index) => (
+              {energyMonitoringData.map((item, index) => (
                 <Tab key={index} className="productCategories-card">
                   <img src={item.icon} alt="product" />
                   <div className="productCategories-card-textInfo">
@@ -37,26 +42,20 @@ const Intrusion = () => {
       </div>
       <div className="app__container" id="CategoryProduct">
         <TabPanel>
-          <BranchMonitoring />
+          <SmartMetering />
         </TabPanel>
         <TabPanel>
-          <SensorsForBank />
+          <SmartHVAC />
         </TabPanel>
         <TabPanel>
-          <AtmSensors />
+          <LightControl />
         </TabPanel>
         <TabPanel>
-          <PerimeterIntrusionSensors />
-        </TabPanel>
-        <TabPanel>
-          <PirMonitoringSensors />
-        </TabPanel>
-        <TabPanel>
-          <IntegratedSecurityPanel />
+          <UPSMonitoring />
         </TabPanel>
       </div>
     </Tabs>
   );
 };
 
-export default Intrusion;
+export default EnergyMonitoring;

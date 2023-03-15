@@ -12,6 +12,7 @@ import AccessControl from "./pages/products/accessControlCategory/AccessControl"
 import Intrusion from "./pages/products/intrusionCategory/Intrusion";
 import FireAlarmSystem from "./pages/products/fireAlarmSystem/FireAlarmSystem";
 import CctvSystem from "./pages/products/cctvSystemCategory/CctvSystem";
+import EnergyMonitoring from "./pages/products/energyMonitoring/EnergyMonitoring";
 
 function App() {
   return (
@@ -35,6 +36,11 @@ function App() {
           />
 
           <Route path="/productCategory/cctv-system" element={<CctvSystem />} />
+
+          <Route
+            path="/productCategory/energy-monitoring"
+            element={<EnergyMonitoring />}
+          />
 
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="*" element={<ErrorPage />} />

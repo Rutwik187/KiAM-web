@@ -55,7 +55,7 @@ export const ProductCategories = [
     {
         icon: images.product1Icon,
         name: "Energy Monitoring and Saving",
-        route: "vehicle_tracking"
+        route: "energy-monitoring"
     }
 
 ]
@@ -344,5 +344,27 @@ export const cctvSystemData = [
 
         icon: images.gpsTracking,
         title: "E-surveillance Panel",
+    }
+]
+export const energyMonitoringData = [
+    {
+
+        icon: images.gpsTracking,
+        title: "Smart Metering",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "Smart HVAC and AC Control",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "Light and Signage Control",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "UPS/ DG Monitoring",
     }
 ]

@@ -11,6 +11,8 @@ import VisitorManagement from "./accessControlProducts/VisitorManagement";
 import LiftAccessControl from "./accessControlProducts/LiftAccessControl";
 import DoorInterLocking from "./accessControlProducts/DoorInterLocking";
 
+import { Link } from "react-router-dom";
+
 import { HashLink } from "react-router-hash-link";
 
 const AccessControl = () => {
