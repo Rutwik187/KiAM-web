@@ -14,40 +14,73 @@ import { useParams } from "react-router-dom";
 import Testimonials from "../../../components/testimonials/Testimonials";
 
 const ServicesInfo = ({ className }) => {
-  const [slidesToShow1, setSlidesToShow1] = useState(null);
-  const [slidesToShow2, setSlidesToShow2] = useState(null);
-
-  useEffect(() => {
-    if (window.innerWidth <= 450) {
-      setSlidesToShow1(1);
-    } else if (window.innerWidth <= 900) {
-      setSlidesToShow1(3);
-    } else {
-      setSlidesToShow1(4);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (window.innerWidth <= 450) {
-      setSlidesToShow2(1);
-    } else if (window.innerWidth <= 900) {
-      setSlidesToShow2(2);
-    } else {
-      setSlidesToShow2(3);
-    }
-  }, []);
-
   const settings1 = {
-    slidesToShow: slidesToShow1,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
     slidesToScroll: 2,
-    // autoplay: true,
-    autoplaySpeed: 2000,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   const settings2 = {
-    slidesToShow: slidesToShow2,
-    slidesToScroll: 2,
-    // autoplay: true,
-    autoplaySpeed: 2000,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const [index, setIndex] = useState(0);
@@ -58,7 +91,6 @@ const ServicesInfo = ({ className }) => {
 
   let { tabId } = useParams();
 
-  console.log(tabId);
   if (typeof tabId === "undefined") {
     tabId = 0;
   }
@@ -190,41 +222,6 @@ const ServicesInfo = ({ className }) => {
                     ))}
                   </Slider>
                 </div>
-              </div>
-              <div className="gallery-slider-mobile">
-                <Carousel
-                  activeIndex={index}
-                  onSelect={handleSelect}
-                  // interval={5000}
-                  // fade={true}
-                >
-                  <Carousel.Item className="carousel-services-gallery-mobile">
-                    {servicesInfo[0].Imgs.slice(0, 6).map((item, index) => (
-                      <div
-                        className="servicesImages-gallery-img"
-                        key={item.caption}
-                      >
-                        <img src={item.img} alt={item.caption} />
-                        <div className="servicesImages-gallery-caption">
-                          {item.caption}
-                        </div>
-                      </div>
-                    ))}
-                  </Carousel.Item>
-                  <Carousel.Item className="carousel-services-gallery-mobile">
-                    {servicesInfo[0].Imgs.slice(2, 8).map((item, index) => (
-                      <div
-                        className="servicesImages-gallery-img"
-                        key={item.caption}
-                      >
-                        <img src={item.img} alt={item.caption} />
-                        <div className="servicesImages-gallery-caption">
-                          {item.caption}
-                        </div>
-                      </div>
-                    ))}
-                  </Carousel.Item>
-                </Carousel>
               </div>
             </div>
             <div className="servicesVideo">

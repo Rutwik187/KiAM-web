@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div className="contact_us">
       <div className="contact_us-head">
         <div className="head-text">What Makes Us Different from others</div>
-        <div className="p-text">
+        <div className="p-text" style={{ color: "white" }}>
           With an agile approach and outstanding solutions in IT that we
           customize for our clients, we create an unbeatable, unique experience
           in technology

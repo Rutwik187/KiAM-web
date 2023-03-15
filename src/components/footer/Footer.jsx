@@ -78,7 +78,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-copyright">
-        <div className="p-text">&#169; KiAM 2023. All Rights Reserved.</div>
+        <div className="p-text" style={{ color: "white" }}>
+          &#169; KiAM 2023. All Rights Reserved.
+        </div>
       </div>
     </footer>
   );
