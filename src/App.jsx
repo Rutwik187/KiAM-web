@@ -14,6 +14,8 @@ import FireAlarmSystem from "./pages/products/fireAlarmSystem/FireAlarmSystem";
 import CctvSystem from "./pages/products/cctvSystemCategory/CctvSystem";
 import EnergyMonitoring from "./pages/products/energyMonitoring/EnergyMonitoring";
 
+import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
+
 function App() {
   return (
     <div className="app">
@@ -47,6 +49,7 @@ function App() {
         </Routes>
         <ContactUs />
         <Footer />
+        <ScrollToTopButton />
       </BrowserRouter>
     </div>
   );
