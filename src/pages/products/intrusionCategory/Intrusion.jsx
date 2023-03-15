@@ -9,6 +9,8 @@ import { intrusionData } from "../../../Data/ProductsData";
 import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
+import { Link } from "react-router-dom";
+
 import { HashLink } from "react-router-hash-link";
 
 const Intrusion = () => {

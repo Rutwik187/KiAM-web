@@ -261,3 +261,15 @@ tr:nth-child(even) {
 .features-list li {
   margin: 0.8rem 0;
 }
+
+.products-img{
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.center-button{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

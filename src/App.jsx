@@ -11,6 +11,7 @@ import ContactUs from "./components/contactUs/ContactUs";
 import AccessControl from "./pages/products/accessControlCategory/AccessControl";
 import Intrusion from "./pages/products/intrusionCategory/Intrusion";
 import FireAlarmSystem from "./pages/products/fireAlarmSystem/FireAlarmSystem";
+import CctvSystem from "./pages/products/cctvSystemCategory/CctvSystem";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
             path="/productCategory/fire-alarm"
             element={<FireAlarmSystem />}
           />
+
+          <Route path="/productCategory/cctv-system" element={<CctvSystem />} />
 
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="*" element={<ErrorPage />} />

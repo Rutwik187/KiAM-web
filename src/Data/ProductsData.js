@@ -314,3 +314,35 @@ export const fireAlarmData = [
     }
 
 ]
+export const cctvSystemData = [
+    {
+
+        icon: images.gpsTracking,
+        title: "CCTV Camera",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "Enterprise Storage",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "CCTV Multi-location Monitoring",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "CCTV Auditing and Time Lapse",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "Advanced AI based",
+    },
+    {
+
+        icon: images.gpsTracking,
+        title: "E-surveillance Panel",
+    }
+]
