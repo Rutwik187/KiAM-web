@@ -47,11 +47,11 @@ export const ProductCategories = [
         name: "CCTV System",
         route: "cctv-system"
     },
-    {
-        icon: images.product1Icon,
-        name: "Vehicle Tracking",
-        route: "vehicle_tracking"
-    },
+    // {
+    //     icon: images.product1Icon,
+    //     name: "Vehicle Tracking",
+    //     route: "vehicle_tracking"
+    // },
     {
         icon: images.product1Icon,
         name: "Energy Monitoring and Saving",
