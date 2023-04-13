@@ -27,7 +27,8 @@ const AboutUs = () => {
   return (
     <div>
       <div className="about_us app__container">
-        <div className="head-text">Top Recent Sites</div>
+        <div>.</div>
+        <div className="head-text">Top Recent Sites </div>
         <hr className="hr" />
         <div className="p-text">
           We build readymade websites, mobile applications, and elaborate online
