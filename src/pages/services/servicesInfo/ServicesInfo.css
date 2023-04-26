@@ -1,7 +1,9 @@
 .servicesInfo-container {
   /* padding-right: 15rem; */
 }
-
+.services-details {
+  padding: 0 15rem;
+}
 .servicesInfoPanel {
   display: flex;
   position: relative;
@@ -11,6 +13,7 @@
 .home_services-side-cards {
   position: fixed;
   top: 50%;
+  right: 2%;
   transform: translateY(-50%);
 }
 .home_services-side-card {
@@ -187,6 +190,9 @@
   .complete-services-info {
     padding: 4rem 9rem 2rem 5rem;
   }
+  .services-details {
+    padding: 0 10rem;
+  }
 }
 @media screen and (max-width: 1000px) {
   /* .gallery-slider-mobile {
@@ -195,6 +201,9 @@
   .gallery-slider-desktop {
     display: none;
   } */
+  .services-details {
+    padding: 0 6rem;
+  }
   .servicesBenefits-slider2 {
     margin-left: 0;
     max-width: 80vw;
@@ -248,6 +257,9 @@
   /* .gallery-slider-desktop {
     display: none;
   } */
+  .services-details {
+    padding: 0 1rem;
+  }
   .servicesVideo {
     margin-top: 5rem;
   }

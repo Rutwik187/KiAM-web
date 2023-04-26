@@ -24,7 +24,7 @@
 .product__tablist-product-img-features-cards {
   display: flex;
   gap: 4rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .product__tablist-product-img-features-card {
   display: flex;
@@ -34,6 +34,7 @@
 }
 .product__tablist-product-img-features-card img {
   width: 10rem;
+  border-radius: 8px;
 }
 
 @media (max-width: 1200px) {
