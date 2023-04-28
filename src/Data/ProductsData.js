@@ -4,26 +4,31 @@ export const homeProductsData = [
     {
         id: 'home_product-1',
         img: images.product_access_control,
-        title: 'Energy Saving',
-        desc: "Our IoT Based Energy Monitoring System has saved people up to 25% off their electricity bills by raising their awareness."
+        title: 'Access Control',
+        desc: "It includes Access Controller, Time Attendance, Biometric Devices & many more...",
+
+        linkTo: 'access-control'
     },
     {
         id: 'home_product-2',
         img: images.product_access_control,
-        title: 'Access Control',
-        desc: "Our IoT Based Energy Monitoring System has saved people up to 25% off their electricity bills by raising their awareness."
+        title: 'Intrusion',
+        desc: "It includes Panel for bank branch monitoring, ATM Sensor, Sensors for banks...",
+        linkTo: 'intrusion'
     },
     {
         id: 'home_product-3',
         img: images.product_access_control,
-        title: 'AMC Services',
-        desc: "Our IoT Based Energy Monitoring System has saved people up to 25% off their electricity bills by raising their awareness."
+        title: 'CCTV System',
+        desc: "It includes CCTV Camera, Enterprise Storage, CCTV Multi-location Monitoring...",
+        linkTo: 'cctv-system'
     },
     {
         id: 'home_product-4',
         img: images.product_access_control,
-        title: 'Centralized Remote Monitoring',
-        desc: "Our IoT Based Energy Monitoring System has saved people up to 25% off their electricity bills by raising their awareness."
+        title: 'Energy Monitoring & Saving',
+        desc: "It includes Smart Metering, Smart HVAC and AC Control, Light and Signage Control ...",
+        linkTo: 'energy-monitoring'
     },
 ]
 export const ProductCategories = [

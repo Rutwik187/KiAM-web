@@ -4,25 +4,25 @@ export const servicesData = [
         id: 'home_service_card-1',
         img: images.hero_services_energy_saving,
         title: 'Energy Saving',
-        desc: "We build ready made websites, mobile applications."
+        desc: "Our IoT Based Energy Monitoring System has saved people up to 25% off their electricity bills by raising their awareness."
     },
     {
         id: 'home_service_card-2',
         img: images.hero_services_amc_services,
         title: 'AMC Services',
-        desc: "We build ready made websites, mobile applications."
+        desc: "Detecting a fire early can mean the difference between losing everything and keeping loss and damage to a minimum."
     },
     {
         id: 'home_service_card-3',
         img: images.hero_services_access_control,
         title: 'Access Control',
-        desc: "We build ready made websites, mobile applications."
+        desc: "The use of IoT in the retail industry changes the way of foot-traffic counters, cellular and Wi-Fi tracking systems, digital signage, a kiosk."
     },
     {
         id: 'home_service_card-4',
         img: images.hero_services_remote_monitoring,
         title: 'Remote Monitoring',
-        desc: "We build ready made websites, mobile applications."
+        desc: "CCTV is a critical security component for all facilities. Video Surveillance helps identify security incidents and take actions."
     },
 ]
 

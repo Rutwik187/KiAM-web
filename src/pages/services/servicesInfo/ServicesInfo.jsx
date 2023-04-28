@@ -66,7 +66,7 @@ const ServicesInfo = ({ className }) => {
                 <HashLink smooth to={`/services#${item.id}`}>
                   <img src={item.img} alt={item.title} />
                   <h5>{item.title}</h5>
-                  <p>{item.desc}</p>
+                  <p className="p-text">{item.desc}</p>
                 </HashLink>
               </Tab>
             ))}

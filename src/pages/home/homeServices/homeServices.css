@@ -113,10 +113,11 @@
   font-size: 1.12rem;
   line-height: 140%;
 }
-.home_service_card p {
+.home_services-card .p-text {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 160%;
+  text-align: center;
 }
 
 @keyframes floating {

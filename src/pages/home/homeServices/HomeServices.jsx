@@ -36,7 +36,7 @@ const HomeServices = () => {
               <Link state={{ tab_id: index }} to={`/services/${index}`}>
                 <img src={item.img} alt={item.title} />
                 <h5>{item.title}</h5>
-                <p>{item.desc}</p>
+                <p className="p-text">{item.desc}</p>
               </Link>
             </div>
           ))}

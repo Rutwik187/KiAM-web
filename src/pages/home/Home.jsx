@@ -9,6 +9,8 @@ import HomeServices from "./homeServices/HomeServices";
 import HomeVideo from "./homeVideo/HomeVideo";
 import TechPartners from "../../components/techPartners/TechPartners";
 import Timeline from "./timeline/Timeline";
+import WhatMakesUsDiff from "./whatMakesUsDiff/WhatMakesUsDiff";
+import HomeTestimonials from "./homeTestimonials/HomeTestimonials";
 
 const home = () => {
   return (
@@ -21,8 +23,10 @@ const home = () => {
       <HomeServices />
       <HomeProducts />
       <HomeVideo />
-      <Timeline />
-      <HomeBrands />
+      {/* <Timeline /> */}
+      <WhatMakesUsDiff />
+      <HomeTestimonials />
+      {/* <HomeBrands /> */}
       <TechPartners />
     </>
   );

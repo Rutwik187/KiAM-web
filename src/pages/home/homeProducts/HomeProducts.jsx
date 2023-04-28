@@ -3,23 +3,10 @@ import { images } from "../../../constants";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./homeProducts.css";
 import { homeProductsData } from "../../../Data/ProductsData";
+import { Link } from "react-router-dom";
 
 const HomeProducts = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
-  // const [timeLeft, setTimeLeft] = useState(10);
-
-  // useEffect(() => {
-  //   const timeoutId = setTimeout(() => {
-  //     setTimeLeft(timeLeft - 1);
-  //     if (currentTabIndex === 3) {
-  //       setCurrentTabIndex(0);
-  //     } else {
-  //       setCurrentTabIndex(currentTabIndex + 1);
-  //     }
-  //   }, 8000);
-
-  //   return () => clearTimeout(timeoutId);
-  // }, [timeLeft]);
 
   return (
     <div>
@@ -50,7 +37,9 @@ const HomeProducts = () => {
                 </div>
                 <div className="sub_head-text bold-text">{item.title}</div>
                 <p className="p-text mtb-2">{item.desc}</p>
-                <p className="arrow-button">Know More -&gt; </p>
+                <Link to={`/productCategory/${item.linkTo}`}>
+                  <p className="arrow-button">Know More -&gt; </p>
+                </Link>
               </div>
             </TabPanel>
           ))}
@@ -103,7 +92,9 @@ const HomeProducts = () => {
                   </div>
                   <div className="sub_head-text bold-text">{item.title}</div>
                   <p className="p-text mtb-2">{item.desc}</p>
-                  <p className="arrow-button">Know More -&gt; </p>
+                  <Link to={`/productCategory/${item.linkTo}`}>
+                    <p className="arrow-button">Know More -&gt; </p>
+                  </Link>
                 </div>
               </TabPanel>
             ))}

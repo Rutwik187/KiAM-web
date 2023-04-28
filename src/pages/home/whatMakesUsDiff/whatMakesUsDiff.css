@@ -1,0 +1,17 @@
+.whatMakesUsDiff_container {
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+}
+.whatMakesUsDiff_icons {
+  gap: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .whatMakesUsDiff_container {
+    width: 100%;
+  }
+  .whatMakesUsDiff_icons {
+    flex-direction: column;
+  }
+}

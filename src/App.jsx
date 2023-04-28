@@ -15,11 +15,13 @@ import CctvSystem from "./pages/products/cctvSystemCategory/CctvSystem";
 import EnergyMonitoring from "./pages/products/energyMonitoring/EnergyMonitoring";
 
 import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "../ScrollToTop";
 
 function App() {
   return (
     <div className="app">
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
