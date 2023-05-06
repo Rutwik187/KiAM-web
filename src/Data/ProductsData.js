@@ -1,4 +1,8 @@
 import { images } from "../constants"
+import energy_system from "../assets/product1.png"
+import cctv_product from "../assets/home-cctv.png"
+import intrusion_product from "../assets/home-intrusion.png"
+
 
 export const homeProductsData = [
     {
@@ -11,21 +15,21 @@ export const homeProductsData = [
     },
     {
         id: 'home_product-2',
-        img: images.product_access_control,
+        img: intrusion_product,
         title: 'Intrusion',
         desc: "It includes Panel for bank branch monitoring, ATM Sensor, Sensors for banks...",
         linkTo: 'intrusion'
     },
     {
         id: 'home_product-3',
-        img: images.product_access_control,
+        img: cctv_product,
         title: 'CCTV System',
         desc: "It includes CCTV Camera, Enterprise Storage, CCTV Multi-location Monitoring...",
         linkTo: 'cctv-system'
     },
     {
         id: 'home_product-4',
-        img: images.product_access_control,
+        img: energy_system,
         title: 'Energy Monitoring & Saving',
         desc: "It includes Smart Metering, Smart HVAC and AC Control, Light and Signage Control ...",
         linkTo: 'energy-monitoring'

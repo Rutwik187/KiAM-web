@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { images } from "../../constants";
 import Map from "./Maps";
 import "./aboutUs.css";
+import KiamManagement from "./kiam-management/KiamManagement";
 
 const AboutUs = () => {
   const [slidesToShow, setSlidesToShow] = useState(4);
@@ -13,7 +14,7 @@ const AboutUs = () => {
     if (window.innerWidth <= 450) {
       setSlidesToShow(2);
     } else if (window.innerWidth <= 900) {
-      setSlidesToShow(3);
+      setSlidesToShow(2);
     } else {
       setSlidesToShow(4);
     }
@@ -26,6 +27,7 @@ const AboutUs = () => {
   };
   return (
     <div>
+      <KiamManagement />
       <div className="about_us app__container">
         <div className="head-text">Top Recent Sites</div>
         <hr className="hr" />
