@@ -9,7 +9,7 @@ import hero_services_amc_services from "../assets/services_amc_services_icon.svg
 import hero_services_remote_monitoring from "../assets/services_remote_monitoring_icon.svg"
 import outline_semiCircle from "../assets/outline-circle.png"
 import light_red_bg from "../assets/light-red-bg.png"
-import product_access_control from "../assets/product_access_control.png"
+import product_access_control from "../assets/access-control_primary-img.png"
 import video_img from "../assets/video-img.png"
 import idea from "../assets/idea.svg"
 import emphasize from "../assets/empathize.svg"

@@ -1,12 +1,27 @@
+.home_testimonial {
+  max-width: 100rem;
+}
 .home-testimonials_slider .slick-track {
-  height: 17rem;
+  height: auto;
+  align-content: space-between;
+}
+.home-testimonials_slider .slick-dots {
+  position: relative;
+  top: -0.5rem;
+}
+
+.home-testimonials_slider .slick-prev:before,
+.home-testimonials_slider .slick-next:before {
+  color: var(--secondary-color);
 }
 .home-testimonials_slider .box {
+  margin: 2rem 0;
   background: #fff;
   width: calc(33% - 10px);
   padding: 25px;
-  border-radius: 3px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 16px;
 }
 .home-testimonials_slider .box i.quote {
   font-size: 20px;
@@ -15,23 +30,32 @@
 .home-testimonials_slider .box .content {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
+  /* justify-content: space-between; */
+  padding: 1rem 0;
 }
 .box .info .name {
   font-weight: 600;
-  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
 }
 .box .info .job {
-  font-size: 16px;
-  font-weight: 500;
-  color: black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #565656;
 }
 
 .box .content .image {
-  height: 75px;
-  width: 75px;
+  height: 65px;
+  width: 65px;
   padding: 3px;
   background: var(--secondary-color);
   border-radius: 50%;
@@ -55,5 +79,8 @@
 @media (max-width: 702px) {
   .home-testimonials_slider .box {
     width: 100%;
+  }
+  .home_testimonial {
+    padding: 1rem;
   }
 }

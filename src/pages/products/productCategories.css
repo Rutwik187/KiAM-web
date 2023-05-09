@@ -3,6 +3,7 @@
   color: var(--black);
 }
 .productCategories-hero {
+  gap: 2rem;
   /* min-height: 80vh; */
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -19,6 +20,7 @@
   /* box-shadow: var(--box-shadow); */
 }
 .productCategories-left {
+  flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,6 +40,7 @@
 }
 
 .productCategories-right {
+  flex: 1.5;
   margin-top: 2rem;
   flex-direction: column;
   align-items: flex-start;

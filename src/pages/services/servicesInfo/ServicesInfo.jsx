@@ -85,7 +85,7 @@ const ServicesInfo = ({ className }) => {
           </Tab>
         ))}
       </TabList>
-      <div className="services-details">
+      <div className="app__container">
         <TabPanel>
           <div id="home_service_card-1">
             <EnergySavingServices />

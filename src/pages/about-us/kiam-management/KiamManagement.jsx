@@ -9,13 +9,13 @@ import profile3 from "../../../assets/milind_sir_profile.png";
 const KiamManagement = () => {
   return (
     <div className="KiamManagement">
-      <div className="KiamManagement_TagLine">
-        <div className="head-text">KIAM</div>
+      <div className="KiamManagement_TagLine app__container">
+        <div className="head-text ">KIAM</div>
         <div className="sub_head-text">
           we create an unbeatable, unique experience in technology
         </div>
       </div>
-      <div className="KiamManagement_Numbers">
+      <div className="KiamManagement_Numbers app__container">
         <div className="KiamManagement_Number">
           <div
             style={{ fontSize: "1.3rem" }}
@@ -121,12 +121,16 @@ const KiamManagement = () => {
           </div>
         </div>
         <div className="kiamManagement_desc">
-          <div className="sub_head-text">Who we are ?</div>
+          <div className="sub_head-text">
+            <b>Who we are ?</b>
+          </div>
           <br />
           <div className="p-text">
-            With an agile approach and outstanding solutions in IT that we
-            customize for our clients, we create an unbeatable, unique
-            experience in technology
+            <b>
+              With an agile approach and outstanding solutions in IT that we
+              customize for our clients, we create an unbeatable, unique
+              experience in technology
+            </b>
           </div>
           <br />
           <div className="p-text">
@@ -138,7 +142,9 @@ const KiamManagement = () => {
           </div>
           <br />
           <br />
-          <div className="sub_head-text">Features</div>
+          <div className="sub_head-text">
+            <b>Features</b>{" "}
+          </div>
           <br />
           <div className="division">
             <div style={{ flex: 1 }}>

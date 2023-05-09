@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const HomeServices = () => {
   return (
-    <div className="home_services app__container_padding section-shadow">
+    <div className="home_services app__container section-shadow">
       <img
         className="home_services_light-red-bg"
         src={images.light_red_bg}

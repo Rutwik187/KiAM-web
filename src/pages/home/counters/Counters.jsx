@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const Counters = () => {
   return (
-    <div className="hero-figures app__container">
+    <div className="hero-figures ">
       <div className="sub_head-text">Some Numbers</div>
       <div>
         <span>

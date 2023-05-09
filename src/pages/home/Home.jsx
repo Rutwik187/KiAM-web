@@ -15,7 +15,7 @@ import HomeTestimonials from "./homeTestimonials/HomeTestimonials";
 const home = () => {
   return (
     <>
-      <div className="heroAndCounters">
+      <div className="heroAndCounters app__container">
         <Hero />
         <Counters />
       </div>

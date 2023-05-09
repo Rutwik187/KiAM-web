@@ -1,8 +1,10 @@
+.KiamManagement {
+  margin-top: 4rem;
+}
 .KiamManagement_TagLine {
-  margin-top: 2rem;
   background-image: url("../../../assets/about-us-bg.png");
   background-color: #1b0c0c;
-  padding: 2rem 2rem;
+  /* padding: 2rem 2rem; */
   height: fit-content;
   object-fit: cover;
 }
@@ -22,7 +24,7 @@
   color: white;
 }
 .KiamManagement_Number {
-  padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
   width: 14rem;
 }
 .kiamManagement_details {
@@ -36,8 +38,10 @@
 .kiamManagement_images {
   gap: 2rem;
 }
+
 .profile_img {
   margin-bottom: 1rem;
+  width: 8rem;
 }
 .kiamManagement_profile {
   display: flex;
@@ -49,8 +53,11 @@
   margin: auto 0;
 }
 @media screen and (max-width: 900px) {
+  .KiamManagement {
+    margin-top: 0rem;
+  }
   .KiamManagement_TagLine {
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
   }
   .KiamManagement_TagLine .head-text,
   .KiamManagement_TagLine .sub_head-text {

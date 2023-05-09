@@ -11,10 +11,12 @@ const HomeTestimonials = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 2000,
+    arrows: true,
+
     responsive: [
       {
         breakpoint: 1400,
@@ -26,7 +28,7 @@ const HomeTestimonials = () => {
         },
       },
       {
-        breakpoint: 1024,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -44,7 +46,10 @@ const HomeTestimonials = () => {
   };
 
   return (
-    <div className="app__container" style={{ marginTop: "5rem" }}>
+    <div
+      className="app__container home_testimonial"
+      style={{ marginTop: "5rem" }}
+    >
       <div className="app__flex-col">
         <div
           className="head-text"
@@ -52,23 +57,23 @@ const HomeTestimonials = () => {
         >
           WE EMBRACE THE FUTURE TOGETHER WITH PIONEERING BRANDS.
         </div>
-        <hr className="hr" />
+        <hr className="hr " />
       </div>
       <div className="home-testimonials_slider">
         <Slider {...settings}>
           {brandsData.map((item, index) => (
             <div class="box" id={index}>
-              <i class="fas fa-quote-left quote"></i>
-              <p>{item.testimonial}</p>
               <div class="content">
+                <div class="image">
+                  <img src={item.img} alt="" />
+                </div>
                 <div class="info">
                   <div class="name">{item.name}</div>
                   <div class="job">Designer | Developer</div>
                 </div>
-                <div class="image">
-                  <img src={item.img} alt="" />
-                </div>
               </div>
+              <i class="fas fa-quote-left quote"></i>
+              <p>{item.testimonial}</p>
             </div>
           ))}
         </Slider>

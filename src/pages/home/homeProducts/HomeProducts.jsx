@@ -11,7 +11,7 @@ const HomeProducts = () => {
   return (
     <div>
       <Tabs
-        className="home_products-desktop app__container_padding section-shadow"
+        className="home_products-desktop app__container section-shadow"
         selectedIndex={currentTabIndex}
         onSelect={setCurrentTabIndex}
       >

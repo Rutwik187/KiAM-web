@@ -59,10 +59,13 @@ a{
   // width: 100%;
   // min-height: 100vh;
   // overflow-x: hidden;
-  padding:1rem 10rem;
+  padding:2rem 10rem;
   
-  @media screen and (max-width: 1200px) {
-    padding: 1rem 1.5rem;
+  @media screen and (max-width: 1300px) {
+    padding: 2rem 3rem;
+  }
+  @media screen and (min-width: 1600px) {
+    padding: 2rem 15rem;
   }
 }
 

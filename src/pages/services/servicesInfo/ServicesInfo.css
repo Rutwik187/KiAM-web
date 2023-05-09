@@ -267,3 +267,9 @@
     padding: 2rem;
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .services-details {
+    padding: 0 20rem;
+  }
+}
