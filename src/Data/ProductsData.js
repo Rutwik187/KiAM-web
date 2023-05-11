@@ -3,6 +3,12 @@ import energy_system from "../assets/product1.png"
 import cctv_product from "../assets/home-cctv.png"
 import intrusion_product from "../assets/home-intrusion.png"
 
+import categoryIcon1 from "../assets/access-control-category-icon.svg"
+import categoryIcon2 from "../assets/intrusion-category-icon.svg"
+import categoryIcon3 from "../assets/fire-alaram-category-icon.svg"
+import categoryIcon4 from "../assets/cctv-category-icon.svg"
+import categoryIcon5 from "../assets/energy-saving-category-icon.png"
+
 
 export const homeProductsData = [
     {
@@ -37,22 +43,22 @@ export const homeProductsData = [
 ]
 export const ProductCategories = [
     {
-        icon: images.product1Icon,
+        icon: categoryIcon1,
         name: "Access Control",
         route: "access-control"
     },
     {
-        icon: images.product1Icon,
+        icon: categoryIcon2,
         name: "Intrusion",
         route: "intrusion"
     },
     {
-        icon: images.product1Icon,
+        icon: categoryIcon3,
         name: "Fire Alarm",
         route: "fire-alarm"
     },
     {
-        icon: images.product1Icon,
+        icon: categoryIcon4,
         name: "CCTV System",
         route: "cctv-system"
     },
@@ -62,7 +68,7 @@ export const ProductCategories = [
     //     route: "vehicle_tracking"
     // },
     {
-        icon: images.product1Icon,
+        icon: categoryIcon5,
         name: "Energy Monitoring and Saving",
         route: "energy-monitoring"
     }

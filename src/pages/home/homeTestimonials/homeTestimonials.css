@@ -1,5 +1,6 @@
 .home_testimonial {
   max-width: 100rem;
+  margin: 5rem auto 0 auto;
 }
 .home-testimonials_slider .slick-track {
   height: auto;

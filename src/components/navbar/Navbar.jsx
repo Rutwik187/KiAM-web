@@ -72,7 +72,7 @@ const Navbar = () => {
                   <Link to="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/">Careers</Link>
+                  <Link to="/careers">Careers</Link>
                 </li>
               </ul>
             </motion.div>

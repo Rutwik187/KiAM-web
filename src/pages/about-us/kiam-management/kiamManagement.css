@@ -29,7 +29,7 @@
 }
 .kiamManagement_details {
   display: flex;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
   gap: 5rem;
 }
 .kiamManagement_desc {

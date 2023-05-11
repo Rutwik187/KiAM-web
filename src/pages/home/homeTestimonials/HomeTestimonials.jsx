@@ -46,10 +46,7 @@ const HomeTestimonials = () => {
   };
 
   return (
-    <div
-      className="app__container home_testimonial"
-      style={{ marginTop: "5rem" }}
-    >
+    <div className="app__container home_testimonial">
       <div className="app__flex-col">
         <div
           className="head-text"
