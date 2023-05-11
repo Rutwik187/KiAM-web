@@ -16,6 +16,7 @@ import EnergyMonitoring from "./pages/products/energyMonitoring/EnergyMonitoring
 
 import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
 import ScrollToTop from "../ScrollToTop";
+import Careers from "./pages/careers/Careers";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           />
 
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <ContactUs />

@@ -1,0 +1,17 @@
+.careers__cover {
+  background: linear-gradient(
+      0deg,
+      rgba(219, 0, 0, 0.17),
+      rgba(219, 0, 0, 0.17)
+    ),
+    url(../../assets/careers-cover.png);
+  background-size: cover;
+}
+
+.career-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 15rem;
+  max-width: 16rem;
+}

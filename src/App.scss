@@ -101,6 +101,9 @@ a{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {

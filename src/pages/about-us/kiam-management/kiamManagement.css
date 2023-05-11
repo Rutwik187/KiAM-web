@@ -6,7 +6,7 @@
   background-color: #1b0c0c;
   /* padding: 2rem 2rem; */
   height: fit-content;
-  object-fit: cover;
+  background-size: cover;
 }
 .KiamManagement_TagLine .head-text,
 .KiamManagement_TagLine .sub_head-text {

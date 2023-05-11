@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li className="app__flex p-text">
             <div />
-            <Link to="/">Careers</Link>
+            <Link to="/careers">Careers</Link>
           </li>
         </ul>
 
