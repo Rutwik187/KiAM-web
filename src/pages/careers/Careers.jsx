@@ -3,6 +3,7 @@ import icon1 from "../../assets/team_work-icon.png";
 import icon2 from "../../assets/secured_future-icon.png";
 import icon3 from "../../assets/learning_opportunity-icon.png";
 import icon4 from "../../assets/upgrading_skills-icons.png";
+import CareersApplicationForm from "./CareersApplicationForm";
 const Careers = () => {
   return (
     <div className="careers">
@@ -34,7 +35,6 @@ const Careers = () => {
           </div>
         </div>
       </div>
-
       <div style={{ gap: "2rem" }} className="app__container division">
         <div style={{ flex: "0.8" }}>
           <div className="p-text">
@@ -103,6 +103,7 @@ const Careers = () => {
           </div>
         </div>
       </div>
+      <CareersApplicationForm />
     </div>
   );
 };

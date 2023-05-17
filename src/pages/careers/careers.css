@@ -15,3 +15,46 @@
   min-width: 15rem;
   max-width: 16rem;
 }
+.careersApplicationFormContainer {
+  background: #ffffff;
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+input[type="text"],
+select input[type="email"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea,
+select input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.careersApplicationFormContainer #address {
+  height: 5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .careersApplicationForm {
+    padding: 1.5rem !important;
+  }
+  .careersApplicationFormContainer {
+    padding: 1rem;
+  }
+}
