@@ -28,8 +28,11 @@ const CctvSystem = () => {
           <HashLink smooth to="/productCategory/cctv-system/#CategoryProduct">
             <TabList className="productCategories-cards">
               {cctvSystemData.map((item, index) => (
-                <Tab key={index} className="productCategories-card">
-                  <img src={item.icon} alt="product" />
+                <Tab
+                  key={index}
+                  className="productCategories-card specificProduct-card"
+                >
+                  {/* <img src={item.icon} alt="product" /> */}
                   <div className="productCategories-card-textInfo">
                     <h5>{item.title}</h5>
                   </div>

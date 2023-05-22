@@ -54,6 +54,10 @@
   width: 10rem;
   height: 10rem;
 }
+.specificProduct-card {
+  width: 10rem;
+  height: 7rem;
+}
 .productCategories-card h5 {
   line-height: 150%;
   font-size: 0.9rem;

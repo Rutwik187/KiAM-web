@@ -1,6 +1,12 @@
 .servicesInfo-container {
   /* padding-right: 15rem; */
 }
+#home_service_card-1,
+#home_service_card-2,
+#home_service_card-3,
+#home_service_card-4 {
+  padding-top: 3rem;
+}
 .services-details {
   padding: 0 15rem;
 }
@@ -195,6 +201,12 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  #home_service_card-1,
+  #home_service_card-2,
+  #home_service_card-3,
+  #home_service_card-4 {
+    padding-top: 0rem;
+  }
   /* .gallery-slider-mobile {
     display: block;
   }

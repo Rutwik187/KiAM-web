@@ -24,8 +24,11 @@ const FireAlarmSystem = () => {
           <HashLink smooth to="/productCategory/fire-alarm#CategoryProduct">
             <TabList className="productCategories-cards">
               {fireAlarmData.map((item, index) => (
-                <Tab key={index} className="productCategories-card">
-                  <img src={item.icon} alt="product" />
+                <Tab
+                  key={index}
+                  className="productCategories-card specificProduct-card"
+                >
+                  {/* <img src={item.icon} alt="product" /> */}
                   <div className="productCategories-card-textInfo">
                     <h5>{item.title}</h5>
                   </div>

@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import {
+  MapContainer,
+  Marker,
+  Popup,
+  TileLayer,
+  SVGOverlay,
+} from "react-leaflet";
 import { Icon } from "leaflet";
 import { images } from "../../constants";
 
@@ -11,6 +17,10 @@ const Maps = () => {
     iconUrl: images.redDot,
     iconSize: [35, 35],
   });
+  const bounds = [
+    [20.593683, 78.962883],
+    [21.593683, 79.962883],
+  ];
   //   const [activePark, setActivePark] = useState(null);
   return (
     <MapContainer
@@ -57,6 +67,13 @@ const Maps = () => {
           </Popup>
         </Marker>
       ))}
+      <SVGOverlay attributes={{ stroke: "red" }} bounds={bounds}>
+        <rect x="0" y="0" width="100%" height="100%" fill="blue" />
+        <circle r="5" cx="10" cy="10" fill="red" />
+        <text x="50%" y="50%" stroke="white">
+          text
+        </text>
+      </SVGOverlay>
     </MapContainer>
   );
 };

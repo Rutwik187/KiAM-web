@@ -17,6 +17,7 @@ const TechPartners = () => {
     }
   }, []);
   const settings = {
+    infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true,

@@ -46,9 +46,9 @@ const productCategories = () => {
           </div>
         </div>
       </div>
-      <div className="app__container">
+      {/* <div className="app__container">
         <Testimonials />
-      </div>
+      </div> */}
     </div>
   );
 };
