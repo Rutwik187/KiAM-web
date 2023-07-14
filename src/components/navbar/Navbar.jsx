@@ -14,11 +14,15 @@ const Navbar = () => {
         <div className="app__enquiry_box__info">
           <div className="app__enquiry_box__info_call">
             <img src={images.mail_icon} alt="call" />
-            <div className="p-text">enquiry@kiam.in</div>
+            <a href="mailto:enquiry@kiam.in">
+              <div className="p-text">enquiry@kiam.in</div>
+            </a>
           </div>
           <div className="app__enquiry_box__info_mail">
             <img src={images.call_icon} alt="call" />
-            <div className="p-text">+91 9321255012</div>
+            <a href="tel:+91 9321255012">
+              <div className="p-text">+91 9321255012</div>
+            </a>
           </div>
         </div>
       </div>
@@ -45,7 +49,7 @@ const Navbar = () => {
           </li>
           <li className="app__flex p-text">
             <div />
-            <Link to="/careers">Careers</Link>
+            {/* <Link to="/careers">Careers</Link> */}
           </li>
         </ul>
 
@@ -71,9 +75,9 @@ const Navbar = () => {
                 <li>
                   <Link to="/about-us">About Us</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/careers">Careers</Link>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           )}

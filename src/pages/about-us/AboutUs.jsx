@@ -28,7 +28,7 @@ const AboutUs = () => {
   return (
     <div>
       <KiamManagement />
-      <div className="about_us app__container">
+      {/* <div className="about_us app__container">
         <div className="head-text">Top Recent Sites</div>
         <hr className="hr" />
         <div className="p-text">
@@ -87,7 +87,7 @@ const AboutUs = () => {
           </Slider>
         </div>
       </div>
-      <Map />
+      <Map /> */}
     </div>
   );
 };

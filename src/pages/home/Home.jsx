@@ -25,7 +25,7 @@ const home = () => {
       <HomeVideo />
       {/* <Timeline /> */}
       <WhatMakesUsDiff />
-      <HomeTestimonials />
+      {/* <HomeTestimonials /> */}
       {/* <HomeBrands /> */}
       <TechPartners />
     </>

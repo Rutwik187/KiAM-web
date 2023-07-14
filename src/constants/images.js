@@ -23,10 +23,9 @@ import brand5 from "../assets/brand5.png"
 import brand6 from "../assets/brand6.png"
 import brand7 from "../assets/brand7.png"
 import dotted_bg_short from "../assets/dotted_bg_short.png"
-import partner1 from "../assets/partner1.svg"
-import partner2 from "../assets/partner2.svg"
-import partner3 from "../assets/partner3.svg"
-import partner4 from "../assets/partner4.svg"
+
+
+
 import contact_us_bg from "../assets/contact-us-bg.png"
 import phone_footer from "../assets/phone-footer.svg"
 import mail_footer from "../assets/gmail-footer.svg"
@@ -109,4 +108,4 @@ import UPSMonitoringImg from "../assets/UPSMonitoring.jpg"
 import DGMonitoringImg from "../assets/DGMonitoring.jpg"
 
 
-export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short, partner1, partner2, partner3, partner4, contact_us_bg, phone_footer, mail_footer, location_footer, white_logo, instagram, facebook, linkedIn, energy_saving_services1, energy_saving_services2, energy_saving_services3, energy_saving_services4, energy_saving_services5, energy_saving_services6, energy_saving_services7, energy_saving_services8, small_corner_rectangle, product1Icon, product1, site1, redDot, PNGJwellers, totalMonitoring, cctv, instructionalPanel, outline_semiCircle, gpsTracking, securityAccessControlPrimaryImg, securityAccessControlFeatureImg1, securityAccessControlFeatureImg2, securityAccessControlFeatureImg3, securityTimelyAttendance, securityBiometricDevices, securityAccessControl, electronicLock, electronicLockArchitecture, electronicLockSystem, visitorsManagementImg, visitorsManagementSecurity, LiftAccessControl, doorInterlockingSystem, panelForBankBranch, atmSensorsImg, sensorsForBanksImg, perimeterIntrusionSensorsImg, pyrone4i, pyrone4v1, steklo2, shvtg, integratedSecurityPannelImg, firePanels, fireSensors, cctvCamera, enterpriseStorage, cctvMultiLocationMonitoring, cctvAuditing, cctvAi1, cctvAi2, cctvESurveillance, smartHVAC1, smartHVAC2, UPSMonitoringImg, DGMonitoringImg }
+export default { logo, call_icon, mail_icon, dotted_bg, hero1, hero_services_access_control, hero_services_energy_saving, hero_services_amc_services, hero_services_remote_monitoring, light_red_bg, product_access_control, video_img, idea, emphasize, build, deploy, brand1, brand2, brand3, brand4, brand5, brand6, brand7, dotted_bg_short, contact_us_bg, phone_footer, mail_footer, location_footer, white_logo, instagram, facebook, linkedIn, energy_saving_services1, energy_saving_services2, energy_saving_services3, energy_saving_services4, energy_saving_services5, energy_saving_services6, energy_saving_services7, energy_saving_services8, small_corner_rectangle, product1Icon, product1, site1, redDot, PNGJwellers, totalMonitoring, cctv, instructionalPanel, outline_semiCircle, gpsTracking, securityAccessControlPrimaryImg, securityAccessControlFeatureImg1, securityAccessControlFeatureImg2, securityAccessControlFeatureImg3, securityTimelyAttendance, securityBiometricDevices, securityAccessControl, electronicLock, electronicLockArchitecture, electronicLockSystem, visitorsManagementImg, visitorsManagementSecurity, LiftAccessControl, doorInterlockingSystem, panelForBankBranch, atmSensorsImg, sensorsForBanksImg, perimeterIntrusionSensorsImg, pyrone4i, pyrone4v1, steklo2, shvtg, integratedSecurityPannelImg, firePanels, fireSensors, cctvCamera, enterpriseStorage, cctvMultiLocationMonitoring, cctvAuditing, cctvAi1, cctvAi2, cctvESurveillance, smartHVAC1, smartHVAC2, UPSMonitoringImg, DGMonitoringImg }
