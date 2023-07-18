@@ -1,5 +1,7 @@
 import React from "react";
 import { images } from "../../../../constants";
+import ButtonBookDemo from "../../../../components/ButtonBookDemo";
+
 const ESurveillancePanel = () => {
   return (
     <div>
