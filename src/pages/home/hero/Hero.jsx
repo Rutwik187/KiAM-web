@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { images } from "../../../constants";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./hero.css";
+import { Link } from "react-router-dom";
 
 function DummyHero() {
   const [index, setIndex] = useState(0);
@@ -28,7 +29,12 @@ function DummyHero() {
               <div>15% to 20%</div>
             </div>
 
-            <button className="button">Know More</button>
+            <Link
+              to="/productCategory/energy-monitoring"
+              style={{ zIndex: "100" }}
+            >
+              <button className="button">Know More</button>
+            </Link>
             <img
               className="hero_dotted-img"
               src={images.dotted_bg}
@@ -80,7 +86,9 @@ function DummyHero() {
               </ul>
             </div>
 
-            <button className="button">Know More</button>
+            <Link to="/productCategory/intrusion" style={{ zIndex: "100" }}>
+              <button className="button">Know More</button>
+            </Link>
             <img
               className="hero_dotted-img"
               src={images.dotted_bg}
@@ -92,7 +100,7 @@ function DummyHero() {
           </div>
         </div>
       </Carousel.Item>
-      <Carousel.Item>
+      {/* <Carousel.Item>
         <div className="hero ">
           <div className="hero_left">
             <div className="head-text">People Counting System</div>
@@ -139,7 +147,7 @@ function DummyHero() {
             <img src={images.carousel3} alt="" />
           </div>
         </div>
-      </Carousel.Item>
+      </Carousel.Item> */}
     </Carousel>
   );
 }
