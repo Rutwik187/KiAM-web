@@ -1,5 +1,6 @@
 import React from "react";
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const TimeAttendance = () => {
   return (
@@ -19,7 +20,7 @@ const TimeAttendance = () => {
                 <li key={index}>{point}</li>
               ))}
               <br />
-              <button className="button">Book A Demo</button>
+              <DemoModal />
             </ul>
           </div>
         </div>

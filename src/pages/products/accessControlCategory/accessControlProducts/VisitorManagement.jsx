@@ -1,5 +1,6 @@
 import React from "react";
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const VisitorManagement = () => {
   return (
@@ -32,7 +33,7 @@ const VisitorManagement = () => {
             className="head-text"
           >
             <img style={{ width: "100%" }} src={item.secImg} alt="" />
-            <button className="button">Book A Demo</button>
+            <DemoModal />{" "}
           </div>
         </div>
       ))}

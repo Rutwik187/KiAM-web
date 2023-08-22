@@ -1,4 +1,5 @@
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const AccessCard = () => {
   return (
@@ -16,7 +17,7 @@ const AccessCard = () => {
                 <li key={index}>{point}</li>
               ))}
               <br />
-              <button className="button">Book A Demo</button>
+              <DemoModal />
             </ul>
           </div>
         </div>

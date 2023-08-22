@@ -43,11 +43,41 @@ function DummyHero() {
       <Carousel.Item>
         <div className="hero ">
           <div className="hero_left">
-            <div className="head-text">Iot Based</div>
-            <div className="sub_head-text">Energy Monitoring System</div>
-            <div className="hero1_highlight">
-              <div>Save Power Cost by</div>
-              <div>15% to 20%</div>
+            <div className="head-text">Smart INTEGRA</div>
+            <br />
+            <div
+              className="sub_head-text"
+              style={{
+                color: "#282828",
+                fontSize: 16,
+                fontFamily: "Inter",
+                fontWeight: "400",
+                wordWrap: "break-word",
+                lineHeight: "150%",
+              }}
+            >
+              all in one integrated product that monitors Safety, Security &
+              Efficiency systems
+            </div>
+            <br />
+            <div>
+              <ul
+                style={{
+                  color: "#282828",
+                  fontSize: 15,
+                  fontFamily: "Inter",
+                  fontWeight: "400",
+                  wordWrap: "break-word",
+                  zIndex: "100",
+                }}
+              >
+                <li>Fire</li>
+                <li>Intrusion</li>
+                <li>Access Control</li>
+                <li>Video Surveillance</li>
+                <li>Temperature Monitoring</li>
+                <li>Energy Monitoring</li>
+              </ul>
             </div>
 
             <button className="button">Know More</button>
@@ -58,20 +88,46 @@ function DummyHero() {
             />
           </div>
           <div className="hero_right app__flex">
-            <img src={images.hero1} alt="" />
+            <img src={images.carousel2} alt="" />
           </div>
         </div>
       </Carousel.Item>
       <Carousel.Item>
         <div className="hero ">
           <div className="hero_left">
-            <div className="head-text">Iot Based</div>
-            <div className="sub_head-text">Energy Monitoring System</div>
-            <div className="hero1_highlight">
-              <div>Save Power Cost by</div>
-              <div>15% to 20%</div>
+            <div className="head-text">People Counting System</div>
+            <br />
+            <div
+              className="sub_head-text"
+              style={{
+                color: "#282828",
+                fontSize: 16,
+                fontFamily: "Inter",
+                fontWeight: "400",
+                wordWrap: "break-word",
+                lineHeight: "150%",
+              }}
+            >
+              understanding the number of consumers coming into your shop as
+              well as the areas they visit most
             </div>
-
+            <br />
+            <div
+              className="sub_head-text"
+              style={{
+                color: "#282828",
+                fontSize: 16,
+                fontFamily: "Inter",
+                fontWeight: "400",
+                wordWrap: "break-word",
+                lineHeight: "150%",
+              }}
+            >
+              Real time people counting with advanced 3D- IR -IOT based
+              technology gives 98% accuracy & most comprehensive personalized
+              reports.
+            </div>
+            <br />
             <button className="button">Know More</button>
             <img
               className="hero_dotted-img"
@@ -80,7 +136,7 @@ function DummyHero() {
             />
           </div>
           <div className="hero_right app__flex">
-            <img src={images.hero1} alt="" />
+            <img src={images.carousel3} alt="" />
           </div>
         </div>
       </Carousel.Item>

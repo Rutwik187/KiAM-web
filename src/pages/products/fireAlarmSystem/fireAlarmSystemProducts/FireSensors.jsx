@@ -1,5 +1,6 @@
 import React from "react";
 import images from "../../../../constants/images";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const FireSensors = () => {
   return (
@@ -38,9 +39,7 @@ const FireSensors = () => {
         style={{ borderRadius: "10px", maxWidth: "100%" }}
         alt=""
       />
-      <button style={{ margin: "auto" }} className="button app__flex">
-        Book A Demo
-      </button>
+      <DemoModal />
     </div>
   );
 };

@@ -1,12 +1,11 @@
 import React from "react";
+import DemoModal from "./demoModal/DemoModal";
 
 const ButtonBookDemo = () => {
   return (
     <>
       <br />
-      <button style={{ margin: "auto" }} className="button app__flex">
-        Book a Demo
-      </button>
+      <DemoModal />
     </>
   );
 };

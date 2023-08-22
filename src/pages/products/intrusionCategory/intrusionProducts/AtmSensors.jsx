@@ -1,5 +1,6 @@
 import React from "react";
 import { intrusionData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const AtmSensors = () => {
   return (
@@ -44,9 +45,7 @@ const AtmSensors = () => {
                 </div>
                 <br />
                 <br />
-                <button style={{ margin: "auto" }} className="button app__flex">
-                  Book A Demo
-                </button>
+                <DemoModal />
               </div>
             </>
           }

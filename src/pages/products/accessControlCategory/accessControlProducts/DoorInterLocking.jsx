@@ -1,4 +1,5 @@
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const DoorInterLocking = () => {
   return (
@@ -14,9 +15,7 @@ const DoorInterLocking = () => {
             <img src={item.primaryImg} alt="access control" />
             <div>
               <div className="p-text">{item.desc2}</div>
-              <button style={{ marginTop: "2rem" }} className="button">
-                Book A Demo
-              </button>
+              <DemoModal />
             </div>
           </div>
         </div>

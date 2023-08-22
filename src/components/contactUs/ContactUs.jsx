@@ -1,6 +1,19 @@
 import "./contactUs.css";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
+  const notify = () => {
+    toast.success("Message Sent Successfully", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   return (
     <div className="contact_us">
       <div className="contact_us-head">
@@ -22,6 +35,13 @@ const ContactUs = () => {
         <input type="text" name="" id="" placeholder="Phone Number" />
         <input type="text" name="" id="" placeholder="Message" />
       </div>
+      <button
+        onClick={notify}
+        style={{ margin: "2rem auto " }}
+        className="button app__flex"
+      >
+        Submit Response
+      </button>
     </div>
   );
 };

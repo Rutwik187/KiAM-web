@@ -1,5 +1,6 @@
 import "./accessController.css";
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const AccessController = () => {
   return (
@@ -19,7 +20,7 @@ const AccessController = () => {
                 <li key={index}>{point}</li>
               ))}
               <br />
-              <button className="button">Book A Demo</button>
+              <DemoModal />
             </ul>
           </div>
           <div className="product__tablist-product-img-features">

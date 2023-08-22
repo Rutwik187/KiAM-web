@@ -18,6 +18,8 @@ import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton"
 import ScrollToTop from "../ScrollToTop";
 import Careers from "./pages/careers/Careers";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="app">
@@ -54,6 +56,7 @@ function App() {
         <ContactUs />
         <Footer />
         <ScrollToTopButton />
+        <ToastContainer />
       </BrowserRouter>
     </div>
   );

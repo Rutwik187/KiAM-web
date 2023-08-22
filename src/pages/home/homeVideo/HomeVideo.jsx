@@ -1,6 +1,6 @@
 import React from "react";
 import "./homeVideo.css";
-import { images } from "../../../constants";
+import video from "../../../assets/video.mp4";
 const HomeVideo = () => {
   return (
     <div className="home_video app__container">
@@ -11,7 +11,10 @@ const HomeVideo = () => {
         We build ready made websites, mobile applications, and elaborate online
         business services.
       </div>
-      <img className="mtb-2" src={images.video_img} alt="video" />
+      <video controls autoplay className="home-video">
+        <source src={video} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };

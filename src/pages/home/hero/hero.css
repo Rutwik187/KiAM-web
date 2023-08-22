@@ -1,5 +1,5 @@
 .heroAndCounters {
-  min-height: 80vh;
+  /* min-height: 80vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -56,9 +56,9 @@
 }
 
 @media screen and (max-width: 900px) {
-  .hero {
+  /* .hero {
     height: 80vh;
-  }
+  } */
   .heroAndCounters {
     height: 100%;
   }

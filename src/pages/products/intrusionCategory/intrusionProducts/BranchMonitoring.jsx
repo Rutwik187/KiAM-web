@@ -1,5 +1,6 @@
 import React from "react";
 import { intrusionData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const BranchMonitoring = () => {
   return (
@@ -42,7 +43,7 @@ const BranchMonitoring = () => {
                 </div>
                 <br />
                 <br />
-                <button className="button">Book A Demo</button>
+                <DemoModal />
               </div>
             </>
           }

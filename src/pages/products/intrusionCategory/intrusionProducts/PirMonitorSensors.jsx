@@ -2,10 +2,11 @@ import React from "react";
 import { images } from "../../../../constants";
 
 import { HashLink } from "react-router-hash-link";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const PirMonitorSensors = () => {
   return (
-    <>
+    <div>
       <div className="head-text">PIR Motion Sensors</div>
       <hr className="hr" />
       <div className="p-text">
@@ -365,10 +366,8 @@ const PirMonitorSensors = () => {
       <button className="button app__flex">STEKLO-2</button>
 
       <br />
-      <button style={{ margin: "auto" }} className="button app__flex">
-        Book A Demo
-      </button>
-    </>
+      <DemoModal />
+    </div>
   );
 };
 

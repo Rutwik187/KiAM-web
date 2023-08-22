@@ -1,5 +1,6 @@
 import React from "react";
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const LiftAccessControl = () => {
   return (
@@ -58,7 +59,7 @@ const LiftAccessControl = () => {
               <br />
             </ul>
           </div>
-          <button className="button">Book A Demo</button>
+          <DemoModal />
         </div>
       ))}
     </div>

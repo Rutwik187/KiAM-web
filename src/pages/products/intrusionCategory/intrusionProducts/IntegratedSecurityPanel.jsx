@@ -1,5 +1,6 @@
 import React from "react";
 import images from "../../../../constants/images";
+import DemoModal from "../../../../components/demoModal/demoModal";
 
 const IntegratedSecurityPanel = () => {
   return (
@@ -61,10 +62,7 @@ const IntegratedSecurityPanel = () => {
         </li>
       </ul>
       <br />
-
-      <button style={{ margin: "auto" }} className="button app__flex">
-        Book A Demo
-      </button>
+      <DemoModal />
     </div>
   );
 };

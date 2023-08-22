@@ -1,4 +1,5 @@
 import { accessControlData } from "../../../../Data/ProductsData";
+import DemoModal from "../../../../components/demoModal/demoModal";
 import "./biometric.css";
 
 const Biometric = () => {
@@ -49,7 +50,7 @@ const Biometric = () => {
         </div>
       ))}
       <br />
-      <button className="button">Book A Demo</button>
+      <DemoModal />{" "}
     </div>
   );
 };
