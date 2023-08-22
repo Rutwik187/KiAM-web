@@ -1,6 +1,6 @@
 import React from "react";
 import images from "../../../../constants/images";
-import DemoModal from "../../../../components/demoModal/demoModal";
+import DemoModal from "../../../../components/demoModal/DemoModal";
 
 const FireSensors = () => {
   return (

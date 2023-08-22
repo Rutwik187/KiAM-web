@@ -1,6 +1,6 @@
 import React from "react";
 import { intrusionData } from "../../../../Data/ProductsData";
-import DemoModal from "../../../../components/demoModal/demoModal";
+import DemoModal from "../../../../components/demoModal/DemoModal";
 
 const PerimeterIntrusionSensors = () => {
   return (

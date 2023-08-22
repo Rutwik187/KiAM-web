@@ -1,5 +1,5 @@
 import { accessControlData } from "../../../../Data/ProductsData";
-import DemoModal from "../../../../components/demoModal/demoModal";
+import DemoModal from "../../../../components/demoModal/DemoModal";
 
 const AccessCard = () => {
   return (
