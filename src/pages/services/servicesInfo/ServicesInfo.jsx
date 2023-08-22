@@ -16,6 +16,7 @@ import AccessControlSolution from "../allServices.jsx/AccessControlSolution";
 import EnergySavingServices from "../allServices.jsx/EnergySavingServices";
 import RemoteMonitoringSystem from "../allServices.jsx/RemoteMonitoringSystem";
 import AMCServices from "../allServices.jsx/AMCServices";
+import DemoModal from "../../../components/demoModal/DemoModal";
 
 const ServicesInfo = ({ className }) => {
   let { tabId } = useParams();
@@ -50,7 +51,9 @@ const ServicesInfo = ({ className }) => {
             We build ready made websites, mobile applications, and elaborate
             online business services.
           </p>
-          {/* <button className="button">Know More</button> */}
+          <div style={{ margin: 0, width: "8.2rem", zIndex: "100" }}>
+            <DemoModal />
+          </div>
           <img
             className="hero_services_dotted-img"
             src={images.dotted_bg}
@@ -70,7 +73,6 @@ const ServicesInfo = ({ className }) => {
                 </HashLink>
               </Tab>
             ))}
-            {/* <button className="button">Know More</button> */}
           </TabList>
         </div>
       </div>

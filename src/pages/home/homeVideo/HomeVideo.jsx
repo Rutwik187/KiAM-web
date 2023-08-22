@@ -11,7 +11,7 @@ const HomeVideo = () => {
         We build ready made websites, mobile applications, and elaborate online
         business services.
       </div>
-      <video controls autoplay className="home-video">
+      <video loop muted autoplay controls className="home-video">
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>

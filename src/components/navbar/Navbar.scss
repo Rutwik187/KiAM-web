@@ -47,11 +47,13 @@
   }
   .app__enquiry_box__info_mail{
     margin-left: 2rem;
-  }
-  @media screen and (max-width: 900px) {
+    @media screen and (max-width: 900px) {
       display: none;
   }
+  }
+  
 }
+
 .app__navbar-logo {
   display: flex;
   justify-content: flex-start;

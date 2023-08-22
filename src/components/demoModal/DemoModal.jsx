@@ -216,7 +216,7 @@ export default function DemoModal() {
                   className="button app__flex"
                   type="button"
                 >
-                  Book Demo2
+                  Book Demo
                 </button>
               </form>
             </div>

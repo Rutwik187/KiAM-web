@@ -1,8 +1,30 @@
 import "./contactUs.css";
 import { toast } from "react-toastify";
+import { useRef, useState } from "react";
 
 const ContactUs = () => {
-  const notify = () => {
+  const name = useRef();
+  const phoneNo = useRef();
+
+  const [phoneError, setPhoneError] = useState("");
+
+  const handlePhoneChange = () => {
+    const phoneNumber = phoneNo.current.value;
+    if (phoneNumber.length === 10) {
+      setPhoneError("");
+    }
+  };
+
+  const handleSendMessage = () => {
+    const phoneNumber = phoneNo.current.value;
+
+    if (phoneNumber.length !== 10) {
+      setPhoneError("Phone number must be 10 digits.");
+      return;
+    } else {
+      setPhoneError("");
+    }
+
     toast.success("Message Sent Successfully", {
       position: "bottom-right",
       autoClose: 5000,
@@ -14,6 +36,7 @@ const ContactUs = () => {
       theme: "light",
     });
   };
+
   return (
     <div className="contact_us">
       <div className="contact_us-head">
@@ -28,15 +51,34 @@ const ContactUs = () => {
         <div className="head-text">Get in touch with us</div>
       </div>
 
-      <div className="contact_us-input-boxes">
-        <input type="text" name="" id="" placeholder="Name" />
-        <input type="text" name="" id="" placeholder="Company Name" />
-        <input type="email" name="" id="" placeholder="Email" />
-        <input type="text" name="" id="" placeholder="Phone Number" />
+      <form className="contact_us-input-boxes">
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Name"
+          ref={name}
+          required
+        />
+        <input type="text" name="" id="" placeholder="Company Name" required />
+        <input type="email" name="" id="" required placeholder="Email" />
+
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Phone Number"
+          ref={phoneNo}
+          onChange={handlePhoneChange}
+          required
+        />
+        {phoneError && (
+          <p style={{ color: "#e53e3e", fontSize: "0.875rem" }}>{phoneError}</p>
+        )}
         <input type="text" name="" id="" placeholder="Message" />
-      </div>
+      </form>
       <button
-        onClick={notify}
+        onClick={handleSendMessage}
         style={{ margin: "2rem auto " }}
         className="button app__flex"
       >

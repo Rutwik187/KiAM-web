@@ -28,7 +28,9 @@ const Navbar = () => {
       </div>
       <nav className="app__navbar app__container">
         <div className="app__navbar-logo">
-          <img src={images.logo} alt="logo" />
+          <Link to="/">
+            <img src={images.logo} alt="logo" />
+          </Link>
         </div>
         <ul className="app__navbar-links">
           <li className="app__flex p-text">

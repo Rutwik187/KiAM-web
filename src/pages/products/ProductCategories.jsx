@@ -8,6 +8,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Link } from "react-router-dom";
 
 import Testimonials from "../../components/testimonials/Testimonials";
+import DemoModal from "../../components/demoModal/DemoModal";
 const productCategories = () => {
   return (
     <div className="productCategories">
@@ -19,7 +20,9 @@ const productCategories = () => {
             We build ready made websites, mobile applications, and elaborate
             online business services.
           </p>
-          <button className="button">Get A Demo Today</button>
+          <div style={{ margin: 0, width: "8.2rem" }}>
+            <DemoModal />
+          </div>
 
           <img
             className="hero_productCategories_dotted-img"
