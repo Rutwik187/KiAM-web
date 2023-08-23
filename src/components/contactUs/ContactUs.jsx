@@ -15,7 +15,8 @@ const ContactUs = () => {
     }
   };
 
-  const handleSendMessage = () => {
+  const handleSendMessage = (event) => {
+    event.preventDefault();
     const phoneNumber = phoneNo.current.value;
 
     if (phoneNumber.length !== 10) {
@@ -51,21 +52,27 @@ const ContactUs = () => {
         <div className="head-text">Get in touch with us</div>
       </div>
 
-      <form className="contact_us-input-boxes">
+      <form className="contact_us-input-boxes" onSubmit={handleSendMessage}>
         <input
           type="text"
-          name=""
+          name="name"
           id=""
           placeholder="Name"
           ref={name}
           required
         />
-        <input type="text" name="" id="" placeholder="Company Name" required />
-        <input type="email" name="" id="" required placeholder="Email" />
+        <input
+          type="text"
+          name="companyName"
+          id=""
+          placeholder="Company Name"
+          required
+        />
+        <input type="email" name="email" id="" required placeholder="Email" />
 
         <input
           type="text"
-          name=""
+          name="phoneNo"
           id=""
           placeholder="Phone Number"
           ref={phoneNo}
@@ -75,15 +82,22 @@ const ContactUs = () => {
         {phoneError && (
           <p style={{ color: "#e53e3e", fontSize: "0.875rem" }}>{phoneError}</p>
         )}
-        <input type="text" name="" id="" placeholder="Message" />
+        <input
+          type="text"
+          name="message"
+          id=""
+          required
+          placeholder="Message"
+        />
+        <button
+          type="submit"
+          onSubmit={handleSendMessage}
+          style={{ margin: "2rem auto " }}
+          className="button app__flex"
+        >
+          Submit Response
+        </button>
       </form>
-      <button
-        onClick={handleSendMessage}
-        style={{ margin: "2rem auto " }}
-        className="button app__flex"
-      >
-        Submit Response
-      </button>
     </div>
   );
 };
